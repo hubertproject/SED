@@ -2,7 +2,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import img from "../assets/about.svg";
+import Button from "../layout/Button";
 import Heading from "../layout/Heading";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -23,19 +25,9 @@ const About = () => {
           Ghana.
         </p>
 
-        <div className="space-y-2">
-          <h2 className="font-bold text-xl">Mission:</h2>
-          <p className="text-lightText">
-            Hands-on training to imbue in trainees industry specific skills that
-            are in high demand globally. Avoiding a mismatch of skills and
-            job market demands.
-          </p>
-          <h2 className="font-bold text-xl">Vision:</h2>
-          <p className="text-lightText">
-            To churn products with cutting-edge skills and knowledge in
-            alignment with global industry demands.
-          </p>
-        </div>
+        <Link to="contact" spy={true} smooth={true} duration={500}>
+          <Button title="Contact Us" />
+        </Link>
       </div>
     </div>
   );

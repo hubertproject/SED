@@ -25,7 +25,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+            className="hover:text-[#539165] transition-all cursor-pointer"
           >
             Home
           </Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+            className="hover:text-[#539165] transition-all cursor-pointer"
           >
             About
           </Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+            className="hover:text-[#539165] transition-all cursor-pointer"
           >
             Courses
           </Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+            className="hover:text-[#539165] transition-all cursor-pointer"
           >
             Reviews
           </Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+            className="hover:text-[#539165] transition-all cursor-pointer"
           >
             Contact
           </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          className="hover:text-[#539165] transition-all cursor-pointer"
         >
           Home
         </Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          className="hover:text-[#539165] transition-all cursor-pointer"
         >
           About
         </Link>
@@ -101,7 +101,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          className="hover:text-[#539165] transition-all cursor-pointer"
         >
           Courses
         </Link>
@@ -110,7 +110,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          className="hover:text-[#539165] transition-all cursor-pointer"
         >
           Reviews
         </Link>
@@ -119,7 +119,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          className="hover:text-[#539165] transition-all cursor-pointer"
         >
           Contact
         </Link>

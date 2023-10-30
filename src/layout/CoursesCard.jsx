@@ -1,24 +1,26 @@
 /* eslint-disable react/prop-types */
- import React from "react";
+// eslint-disable-next-line no-unused-vars
+import React from "react";
+// eslint-disable-next-line no-unused-vars
 import webImg from "../assets/web-dev.svg";
+import appImg from "../assets/App-dev.svg";
+import graphicImg from "../assets/graphic.svg";
+import digitalImg from "../assets/digital.svg";
 
-const CoursesCard = (props) => {
+const Courses = () => {
   return (
-    <div className=" flex flex-col items-center justify-between bg-white border-2 border-lightText md:border-none md:w-2/5 p-5 cursor-pointer rounded-lg hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-all">
-      <div className=" w-3/5">
-        <img src={props.img} alt="img" />
-      </div>
-      <div>
-        <h3 className="font-semibold text-lg text-center my-5">
-          {props.title}
-        </h3>
-        <p className="text-lightText text-center md:text-start">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit this is the
-          web
-        </p>
+    <div className=" min-h-screen flex flex-col items-center md:px-32 px-5 my-10">
+      <Heading title1="Our" title2="Courses" />
+
+      <div className=" flex flex-wrap justify-center gap-6 mt-6">
+        <CoursesCard img={webImg} title="Web Development" />
+        <CoursesCard img={appImg} title="App Development" />
+        <CoursesCard img={graphicImg} title="Graphic Designer" />
+        <CoursesCard img={digitalImg} title="Digital Marketing" />
+        
       </div>
     </div>
   );
 };
 
-export default CoursesCard;
+export default Courses;
