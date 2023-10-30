@@ -1,0 +1,21 @@
+.tuition-fees {
+    position: relative;
+  }
+  
+  .with-arrow:after {
+    content: "\2192"; /* Right arrow character */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #007BFF; /* Arrow color */
+    opacity: 0;
+    transform: translateX(10px);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .with-arrow:hover:after {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  

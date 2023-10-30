@@ -8,6 +8,8 @@ import Courses from "./components/Courses";
 import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+ 
+
 
 const App = () => {
   return (
@@ -40,6 +42,8 @@ const App = () => {
         <Footer/>
       </div>
     </Router>
+
+    
   );
 };
 

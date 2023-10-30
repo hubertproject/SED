@@ -25,7 +25,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer"
+            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
           >
             Home
           </Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer"
+            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
           >
             About
           </Link>
@@ -43,7 +43,8 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer"          >
+            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          >
             Courses
           </Link>
           <Link
@@ -51,7 +52,8 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer"          >
+            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          >
             Reviews
           </Link>
           <Link
@@ -59,28 +61,30 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer"          >
+            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          >
             Contact
           </Link>
         </nav>
 
         <div className="flex md:hidden" onClick={handleChange}>
-          <div className=" p-2">
-            <AiOutlineMenu size={22} />
+          <div className="p-2">
+          <AiOutlineMenu size={22} style={{ color: "black" }} />
           </div>
         </div>
       </div>
       <div
-        className={` ${
+        className={`${
           menu ? "translate-x-0" : "-translate-x-full"
-        } md:hidden flex flex-col absolute bg-[#ffffff] left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300 `}
+        } md:hidden flex flex-col absolute bg-[#ffffff] left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
       >
         <Link
           to="home"
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer"        >
+          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+        >
           Home
         </Link>
         <Link
@@ -88,7 +92,8 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer"        >
+          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+        >
           About
         </Link>
         <Link
@@ -96,7 +101,8 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer"        >
+          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+        >
           Courses
         </Link>
         <Link
@@ -104,7 +110,8 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer"        >
+          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+        >
           Reviews
         </Link>
         <Link
@@ -112,7 +119,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer"
+          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
         >
           Contact
         </Link>
