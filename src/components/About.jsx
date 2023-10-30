@@ -2,9 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import img from "../assets/about.svg";
-import Button from "../layout/Button";
 import Heading from "../layout/Heading";
-import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -15,7 +13,7 @@ const About = () => {
 
       <div className="w-full md:w-2/4 text-center space-y-2">
         <Heading title1="About" title2="Us?" />
-        <p className="text-lightText">
+        <p className="text-lightText text-left">
           The SEDS Institute is a forward-thinking provider of opportunities in
           software engineering and the German language. Our mission is to align
           training with industry needs, ensuring our students are job-ready. We
@@ -25,9 +23,19 @@ const About = () => {
           Ghana.
         </p>
 
-        <Link to="contact" spy={true} smooth={true} duration={500}>
-          <Button title="Contact Us" />
-        </Link>
+        <div className="space-y-2">
+          <h2 className="font-bold text-3xl">Mission:</h2>
+          <p className="text-lightText text-left">
+            Hands-on training to imbue in trainees industry specific skills that
+            are in high demand globally. Avoiding a mismatch of skills and
+            job market demands.
+          </p>
+          <h2 className="font-bold text-3xl">Vision:</h2>
+          <p className="text-lightText text-left">
+            To churn products with cutting-edge skills and knowledge in
+            alignment with global industry demands.
+          </p>
+        </div>
       </div>
     </div>
   );

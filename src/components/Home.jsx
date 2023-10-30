@@ -12,11 +12,16 @@ const Home = () => {
           Knowledge with
           <span className="text-brightGreen"> eStudy</span>
         </h2>
-        <p className=" text-lightText mt-5 text-start">
-          eStudy is your gateway to a world of limitless learning possibilities.
-          With our cutting-edge eLearning platform, you can explore a vast
-          library of courses, from academic subjects to practical skills, all
-          designed to help you achieve your goals.
+        <p className=" text-white mt-5 text-start">
+          The SEDS Institute is an emerging educational provider, focusing on
+          software engineering training and German language lessons. We align
+          our programs with the evolving job market, aiming to equip students
+          with skills that match industry needs. In Ghana, a mismatch between
+          university curricula and job market requirements contributes to youth
+          unemployment. SEDS aims to bridge this gap. Our certifications are
+          recognized in the USA and Germany, offering a pathway to employment
+          and citizenship opportunities. In a country with high youth
+          unemployment, we are dedicated to making a positive impact.
         </p>
 
         <Link to="contact" spy={true} smooth={true} duration={500}>
