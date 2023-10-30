@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import img from "../assets/about.svg";
-import Button from "../layout/Button";
+ 
 import Heading from "../layout/Heading";
-import { Link } from "react-scroll";
+ 
 
 const About = () => {
   return (
@@ -19,9 +19,7 @@ const About = () => {
           molestiae consequuntur iste placeat recusandae qui nesciunt possimus.
         </p>
 
-        <Link to="contact" spy={true} smooth={true} duration={500}>
-          <Button title="Contact Us" />
-        </Link>
+       
       </div>
     </div>
   );

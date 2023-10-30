@@ -12,7 +12,7 @@ const Home = () => {
           Knowledge with
           <span className="text-brightGreen"> eStudy</span>
         </h2>
-        <p className=" text-lightText mt-5 text-start">
+        <p className=" text-white mt-5 text-start">
           eStudy is your gateway to a world of limitless learning possibilities.
           With our cutting-edge eLearning platform, you can explore a vast
           library of courses, from academic subjects to practical skills, all
@@ -20,7 +20,7 @@ const Home = () => {
         </p>
 
         <Link to="contact" spy={true} smooth={true} duration={500}>
-          <Button title="Contact Us" />
+          <Button title="Enroll Now" />
         </Link>
       </div>
 

@@ -17,6 +17,7 @@ const Courses = () => {
         <CoursesCard img={appImg} title="App Development" />
         <CoursesCard img={graphicImg} title="Graphic Designer" />
         <CoursesCard img={digitalImg} title="Digital Marketing" />
+        
       </div>
     </div>
   );
