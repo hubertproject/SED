@@ -1,23 +1,19 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
- // eslint-disable-next-line no-unused-vars
- import React from "react";
-import webImg from "../assets/web-dev.svg";
+import React from "react";
+ 
 
 const CoursesCard = (props) => {
+  const { img, title, description } = props;
+
   return (
-    <div className=" flex flex-col items-center justify-between bg-white border-2 border-lightText md:border-none md:w-2/5 p-5 cursor-pointer rounded-lg hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-all">
-      <div className=" w-3/5">
-        <img src={props.img} alt="img" />
+    <div className="flex flex-col items-center justify-between bg-white border-2 border-lightText md:border-none md:w-3/12 p-5 cursor-pointer rounded-lg hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-all">
+      <div className="w-3/5">
+        <img src={img} alt="img" />
       </div>
       <div>
-        <h3 className="font-semibold text-lg text-center my-5">
-          {props.title}
-        </h3>
-        <p className="text-lightText text-center md:text-start">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit this is the
-          web
-        </p>
+        <h3 className="font-semibold text-2xl text-center my-5">{title}</h3>
+        <p className="text-lightText text-left md:text-start text-semibold text-1xl">{description}</p>
       </div>
     </div>
   );

@@ -2,30 +2,35 @@
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
+import sedlogo from "../assets/sedlogo.jpg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   const handleChange = () => {
-    setMenu(false); // Close the menu when a nav link is pressed
+    setMenu(false);  
   };
 
   return (
     <div>
-      <div className="flex flex-row justify-between p-5 px-5 md:px-32 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-        <div>
-          <Link to="/" className="text-black font-semibold text-2xl p-1 cursor-pointer">
-            eStudy
+      <div className="flex flex-row justify-between p-5 px-3  md:px-5 bg-white">
+        <div className="flex items-center">  
+          <Link to="home" className="p-1 cursor-pointer">
+            <img
+    src={sedlogo}
+    alt="Logo"
+    style={{ width: "80px", height: "25px" }}  
+  /> 
           </Link>
         </div>
 
-        <nav className="hidden md:flex gap-5 font-medium p-1 text-lg">
+        <nav className="hidden md:flex gap-5 font-medium p-1 text-lg ">
           <Link
             to="home"
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+            className="text-black  text-center transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
             onClick={handleChange}
           >
             Home
@@ -81,7 +86,7 @@ const Navbar = () => {
       <div
         className={`${
           menu ? "translate-x-0" : "-translate-x-full"
-        } md:hidden flex flex-col absolute bg-[#ffffff] left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+        } md:hidden flex flex-col absolute bg-[#ffffff] left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-4 w-full h-fit transition-transform duration-300`}
       >
         <Link
           to="home"

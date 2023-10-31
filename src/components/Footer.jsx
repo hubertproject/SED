@@ -64,7 +64,7 @@ const Footer = () => {
       <div className=" text-center mt-4">
         <p>
           @copyright developed by
-          <span className="text-brightGreen px-2">champion programmers</span>|
+          <span className="text-brightGreen px-2">SEDS-INSTITUTE</span>|
           All rights reserved
         </p>
       </div>

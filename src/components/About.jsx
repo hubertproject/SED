@@ -1,41 +1,47 @@
-/* eslint-disable no-irregular-whitespace */
-// eslint-disable-next-line no-unused-vars
+ // eslint-disable-next-line no-unused-vars
 import React from "react";
-import img from "../assets/about.svg";
-import Heading from "../layout/Heading";
+import r3 from "../assets/r3.jpg";
+import Button from "../layout/Button";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
-    <div className="md:min-h-screen flex flex-col-reverse md:flex-row items-center gap-5 md:mx-32 mx-5 mt-14">
-      <div className="w-full md:w-2/4">
-        <img src={img} alt="img" />
-      </div>
-
-      <div className="w-full md:w-2/4 text-center space-y-2">
-        <Heading title1="About" title2="Us?" />
-        <p className="text-lightText text-left">
-          The SEDS Institute is a forward-thinking provider of opportunities in
-          software engineering and the German language. Our mission is to align
-          training with industry needs, ensuring our students are job-ready. We
-          bridge the gap between education and employment, addressing youth
-          unemployment. Our certifications are recognized in the USA and
-          Germany, and we are dedicated to combatting high youth unemployment in
-          Ghana.
+    <div className=" min-h-[70vh] flex flex-col md:flex-row md:justify-between items-center md:mx-32 mx-5 mt-10">
+      <div className=" md:w-2/4 text-left">
+        <h2 className=" text-3xl font-semibold leading-tight">
+          ABOUT US
+         
+        </h2>
+        <p className=" text-white mt-5 mb-4 text-start">
+          Hands-on training to imbue in trainees industry specific skills that
+          are in high demand globally. Avoiding a mismatch of skills and job
+          market demands.
+        </p>
+        <h2 className=" text-2xl mt-2  font-semibold leading-tight">
+          MISSION
+         
+        </h2>
+        <p className=" text-white mt-3 text-start">
+        Hands-on training to imbue in trainees industry specific skills that
+          are in high demand globally. Avoiding a mismatch of skills and job
+          market demands
+        </p>
+        <h2 className=" text-2xl mt-2  font-semibold leading-tight">
+          VISION
+          
+        </h2>
+        <p className=" text-white mt-3 text-start">
+          To churn products with cutting-edge skills and knowledge in alignment
+          with global industry demands.
         </p>
 
-        <div className="space-y-2">
-          <h2 className="font-bold text-3xl">Mission:</h2>
-          <p className="text-lightText text-left">
-            Hands-on training to imbue in trainees industry specific skills that
-            are in high demand globally. Avoiding a mismatch of skills and
-            job market demands.
-          </p>
-          <h2 className="font-bold text-3xl">Vision:</h2>
-          <p className="text-lightText text-left">
-            To churn products with cutting-edge skills and knowledge in
-            alignment with global industry demands.
-          </p>
-        </div>
+        <Link to="contact" spy={true} smooth={true} duration={500}>
+          <Button title="Enroll Now" />
+        </Link>
+      </div>
+
+      <div className=" w-full md:w-2/4 mt-5">
+        <img src={r3} alt="img" />
       </div>
     </div>
   );
