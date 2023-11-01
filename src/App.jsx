@@ -9,6 +9,7 @@ import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
  
+ 
 
 
 const App = () => {
@@ -40,8 +41,12 @@ const App = () => {
         </main>
 
         <Footer/>
+        
       </div>
+      
+   
     </Router>
+    
 
     
   );

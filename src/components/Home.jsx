@@ -1,7 +1,6 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Button from "../layout/Button";
-import { Link } from "react-scroll";
 import r1 from "../assets/r1.jpg";
 import r2 from "../assets/r2.jpg";
 import Heading from "../layout/Heading";
@@ -23,9 +22,7 @@ const Home = () => {
             reduce youth unemployment in Ghana.
           </p>
 
-          <Link to="contact" spy={true} smooth={true} duration={500}>
-            <Button title="Enroll Now" />
-          </Link>
+          <Button title="Enroll Now" />
         </div>
 
         <div className="w-full md:w-2/4 mt-5">
@@ -44,7 +41,7 @@ const Home = () => {
             The SEDS Institute is an equal and emerging industry-relevant
             opportunity provider. We do so by providing training in software
             engineering and the provision of language lessons specifically in
-            German so students can access myriad of opportunities in education,
+            German so students can access a myriad of opportunities in education,
             work, and citizenship in Deutschland (Germany) and elsewhere. Our
             offers, curricula, and training are aligned with evolving needs of
             the job market and emerging industries. In short, we train for the
@@ -52,7 +49,7 @@ const Home = () => {
             of skills and what the job market is advertising and needs. In
             Ghana, the industries and the Institute of learning and training are
             traveling in opposite directions. Curricula (program content) of the
-            universities produce one thing and the job market is looking for
+            universities produce one thing, and the job market is looking for
             another. A major reason for youth unemployment. This abyss can,
             however, be escaped if you make the right decision now.
             Certification: Our certifications are from the USA and the Goethe
