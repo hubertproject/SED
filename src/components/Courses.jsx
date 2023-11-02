@@ -129,7 +129,7 @@ const Courses = () => {
         />
         <CoursesCard
           img={c4}
-          title="Germany"
+          title="German Language"
           description="Learning German with SEDS Institute offers access to opportunities in Germany, aligns with the job market, and provides international certification to combat youth unemployment in Ghana."
         />
       </div>

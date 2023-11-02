@@ -1,73 +1,65 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
-import { Link } from "react-scroll";
+/* eslint-disable no-unused-vars */
+ import React, { useState, useEffect } from "react";
+import twitter from "/socials/twitter.png";
+import github from "/socials/github.png";
+import linkedin from "/socials/linkedin.png";
+import gmail from "/socials/gmail.png";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    });
+
+    return () => {
+      window.removeEventListener("scroll", () => {});
+    };
+  }, []);
+
   return (
-    <div>
-      <div className=" flex flex-col md:flex-row justify-between bg-white border-2 border-lightText rounded-lg md:px-32 p-5">
-        <div className="flex flex-col md:flex-row gap-5 font-medium p-1 text-lg">
-          <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            Home
-          </Link>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            About
-          </Link>
-          <Link
-            to="courses"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            Courses
-          </Link>
-          <Link
-            to="reviews"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            Reviews
-          </Link>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="hover:text-[#539165] transition-all cursor-pointer"
-          >
-            Contact
-          </Link>
-        </div>
-
-        <div className=" mt-4 md:mt-0">
-          <Link to="/" className=" font-semibold text-2xl p-1 cursor-pointer">
-            eStudy
-          </Link>
-        </div>
+    <div className="md:px-10 px-7 mt-24">
+      <div className="text-white opacity-50 flex flex-col md:flex-row justify-between items-center my-5">
+        <p>@ Copyright 2023 | SEDS INSTITUTE</p>
       </div>
 
-      <div className=" text-center mt-4">
-        <p>
-          @copyright developed by
-          <span className="text-brightGreen px-2">SEDS-INSTITUTE</span>|
-          All rights reserved
-        </p>
+       
+      <div className="flex mb-5 justify-center space-x-4">
+        <a href="https://github.com/hubertproject/" target="_blank" rel="noreferrer">
+          <img src={github} alt="" />
+        </a>
+        <a href="https://www.linkedin.com/in/hubert-selormey-9ba940227/" target="_blank" rel="noreferrer">
+          <img src={linkedin} alt="" />
+        </a>
+        <a href="https://mail.google.com/mail/" target="_blank" rel="noreferrer">
+          <img src={gmail} alt="" />
+        </a>
+        <a href="https://twitter.com/HubertDhk" target="_blank" rel="noreferrer">
+          <img src={twitter} alt="" />
+        </a>
       </div>
+
+      {/* Up/Down Arrow */}
+      <button
+        className={`bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 fixed bottom-10 right-10 transform ${
+          scrolling ? "rotate-180 translate-y-4" : ""
+        }`}
+        onClick={scrollToTop}
+      >
+        {scrolling ? "↓" : "↑"}
+      </button>
     </div>
   );
 };

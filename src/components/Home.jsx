@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Button from "../layout/Button";
-import r1 from "../assets/r1.jpg";
-import r2 from "../assets/r2.jpg";
+import s4 from "../assets/s4.svg";
+import s2 from "../assets/s2.svg";
 import Heading from "../layout/Heading";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -21,18 +22,19 @@ const Home = () => {
             certifications come from the USA and the Goethe Institute, helping
             reduce youth unemployment in Ghana.
           </p>
-
-          <Button title="Enroll Now" />
+          <Link to="/Form">
+            <Button title="Enroll Now" />
+          </Link>
         </div>
-
+        
         <div className="w-full md:w-2/4 mt-5">
-          <img src={r1} alt="img" />
+          <img src={s4} alt="img" />
         </div>
       </div>
 
       <div className="md:min-h-screen flex flex-col-reverse md:flex-row items-center gap-5 md:mx-32 mx-5 mt-14">
         <div className="w-full md:w-2/4">
-          <img src={r2} alt="img" />
+          <img src={s2} alt="img" />
         </div>
 
         <div className="w-full md:w-3/4 text-center space-y-2 mb-10">
