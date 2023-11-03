@@ -8,8 +8,8 @@ const About = () => {
   return (
     <div className=" min-h-[70vh] flex flex-col md:flex-row md:justify-between items-center md:mx-32 mx-5 mt-10">
       <div className=" md:w-2/4 text-left">
-        <h2 className=" text-3xl font-semibold leading-tight">ABOUT US</h2>
-        <p className=" text-white mt-5 mb-4 text-start">
+        {/* <h2 className=" text-3xl font-semibold leading-tight">ABOUT US</h2> */}
+        {/* <p className=" text-white mt-5 mb-4 text-start">
           About Us The SEDS Institute is an equal opportunity provider offering
           software engineering and German language training. Our focus is on
           aligning our programs with the evolving job market, preventing
@@ -17,17 +17,17 @@ const About = () => {
           Ghana with internationally recognized certifications from the USA and
           the Goethe Institute. Join us to bridge the education-industry gap and
           secure your future.
-        </p>
-        <h2 className=" text-2xl mt-2  font-semibold leading-tight">MISSION</h2>
-        <p className=" text-white mt-3 text-start">
-          Hands-on training to imbue in trainees industry specific skills{" "}
-          <p> that are in high demand globally.</p> Avoiding a mismatch of
-          skills and job market demands.
-        </p>
-        <h2 className=" text-2xl mt-2  font-semibold leading-tight">VISION</h2>
+        </p> */}
+        <h2 className=" text-2xl mt-2  font-semibold leading-tight">VISSION</h2>
         <p className=" text-white mt-3 text-start">
           To churn products with cutting-edge skills and knowledge in alignment
           with global industry demands.
+        </p>
+        <h2 className=" text-2xl mt-2  font-semibold leading-tight">VISION</h2>
+        <p className=" text-white mt-3 text-start">
+          Hands-on training to imbue in trainees industry specific skills that
+          are in high demand globally. Avoiding a mismatch of skills and
+          job market demands.
         </p>
 
         <Link to="contact" spy={true} smooth={true} duration={500}>

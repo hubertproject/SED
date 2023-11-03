@@ -32,7 +32,7 @@ const Footer = () => {
   return (
     <div className="md:px-10 px-7 mt-24">
       <div className="text-white opacity-50 flex flex-col md:flex-row justify-between items-center my-5">
-        <p>@ Copyright 2023 | SEDS INSTITUTE</p>
+        <p>@ Copyright 2023 | The SEDS Institute</p>
       </div>
 
        
@@ -51,7 +51,7 @@ const Footer = () => {
         </a>
       </div>
 
-      {/* Up/Down Arrow */}
+      {/* Up Arrow */}
       <button
         className={`bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 fixed bottom-10 right-10 transform ${
           scrolling ? "rotate-180 translate-y-4" : ""

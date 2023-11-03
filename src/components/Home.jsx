@@ -12,10 +12,10 @@ const Home = () => {
       <div className="min-h-[70vh] flex flex-col md:flex-row md:justify-between items-center md:mx-32 mx-5 mt-10">
         <div className="md:w-2/4 text-left">
           <h2 className="text-4xl font-semibold leading-tight">
-            SEDS
+             The SEDS
             <span className="text-brightGreen"> Institute</span>
           </h2>
-          <p className="text-white mt-5 text-start">
+          <p className="text-three mt-5 text-start">
             The SEDS Institute provides industry-relevant training in software
             engineering and German language to create job opportunities in
             Germany and beyond, aligning with evolving market needs. Our
@@ -52,12 +52,9 @@ const Home = () => {
             Ghana, the industries and the Institute of learning and training are
             traveling in opposite directions. Curricula (program content) of the
             universities produce one thing, and the job market is looking for
-            another. A major reason for youth unemployment. This abyss can,
+            another. A major reason for youth unemployment. This abyss can
             however, be escaped if you make the right decision now.
-            Certification: Our certifications are from the USA and the Goethe
-            Institute (Germany). In the face of high youth unemployment (nearly
-            2 million) in the country, this is our little contribution to
-            curbing the menace.
+            
           </p>
         </div>
       </div>

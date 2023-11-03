@@ -19,8 +19,8 @@ const Form = () => {
   };
 
   const isPhoneNumberValid = (phoneNumber) => {
-    // Use a regular expression to validate phone number
-    const phonePattern = /^\d{10}$/; // This pattern assumes a 10-digit phone number
+    
+    const phonePattern = /^\d{10}$/;  
     return phonePattern.test(phoneNumber);
   };
 
@@ -33,7 +33,7 @@ const Form = () => {
     }
 
     console.log(formData);
-    // You can perform further actions, like sending data to an API, here.
+     
   };
 
   return (

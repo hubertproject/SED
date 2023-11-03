@@ -8,7 +8,8 @@ import Courses from "./components/Courses";
 import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-// import Form from "./components/Form";
+import Form from "./components/Form";
+import Gallery from "./components/Gallery"
  
  
 
@@ -35,6 +36,9 @@ const App = () => {
           <div id="reviews">
             <Reviews />
           </div>
+          <div id="gallery">
+            <Gallery />
+          </div>
 
           <div id="contact">
             <Contact />
@@ -42,7 +46,7 @@ const App = () => {
         </main>
 
         <Footer/>
-        {/* <Form/> */}
+        <Form/>
         
       </div>
       

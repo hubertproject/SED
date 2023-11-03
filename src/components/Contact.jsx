@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import img from "../assets/contact.svg";
+import se1 from "../assets/se1.jpg";
 import Heading from "../layout/Heading";
 import Button from "../layout/Button";
 
@@ -48,7 +48,7 @@ const Contact = () => {
         </form>
 
         <div className=" w-full md:w-2/4">
-          <img src={img} alt="img" />
+          <img src={se1} alt="img" />
         </div>
       </div>
     </div>

@@ -73,6 +73,16 @@ const Navbar = () => {
             className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
             onClick={handleChange}
           >
+             Gallery
+          </Link>
+          <Link
+            to="gallery"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+            onClick={handleChange}
+          >
             Contact
           </Link>
         </nav>
@@ -130,6 +140,16 @@ const Navbar = () => {
         </Link>
         <Link
           to="contact"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          onClick={handleChange}
+        >
+          Gallery
+        </Link>
+        <Link
+          to="gallery"
           spy={true}
           smooth={true}
           duration={500}

@@ -1,13 +1,14 @@
+ /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-// eslint-disable-next-line no-unused-vars
+// Heading.jsx
 import React from "react";
 
-const Heading = (props) => {
+const Heading = ({ title1, title2 }) => {
   return (
-    <div>
-      <h3 className=" text-4xl font-semibold">
-        {props.title1} <span className=" text-brightGreen">{props.title2}</span>
-      </h3>
+    <div className="text-center">
+      <h1 className="text-4xl font-bold">
+        {title1} {title2}
+      </h1>
     </div>
   );
 };
