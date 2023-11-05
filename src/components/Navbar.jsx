@@ -23,6 +23,7 @@ const Navbar = () => {
   /> 
           </Link>
         </div>
+        <div className="text-blueblack pr-4 text-2xl font-bold">The SEDS Institute</div>
 
         <nav className="hidden md:flex gap-5 font-medium p-1 text-lg ">
           <Link

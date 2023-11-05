@@ -12,13 +12,14 @@ export default {
       colors: {
         'main': '#e002a2',
         'second': '#47019d',
-        'three': '#d0f5ed',
+        'whitey': '#f7fcfb',
         'black': '#212121',
         'white': '#ffffff',
         'goldenYellow': '#FFDF00',
         'gray': '#808080e2',
         'gwhite:':'#03192e',
-        'blueblack':'#01051f'
+        'blueblack':'#01032b',
+        'whit' :'#dae8e5'
       },
     },
   },
