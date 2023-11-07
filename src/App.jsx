@@ -8,7 +8,7 @@ import Courses from "./components/Courses";
 import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Form from "./components/Form";
+ 
 import Gallery from "./components/Gallery"
  
  
@@ -46,7 +46,7 @@ const App = () => {
         </main>
 
         <Footer/>
-        <Form/>
+        
         
       </div>
       
