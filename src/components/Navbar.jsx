@@ -56,7 +56,7 @@ const Navbar = () => {
           >
             Courses
           </Link>
-          <Link
+          {/* <Link
             to="reviews"
             spy={true}
             smooth={true}
@@ -65,7 +65,7 @@ const Navbar = () => {
             onClick={handleChange}
           >
             Reviews
-          </Link>
+          </Link> */}
           <Link
             to="contact"
             spy={true}
@@ -129,7 +129,7 @@ const Navbar = () => {
         >
           Courses
         </Link>
-        <Link
+        {/* <Link
           to="reviews"
           spy={true}
           smooth={true}
@@ -138,7 +138,7 @@ const Navbar = () => {
           onClick={handleChange}
         >
           Reviews
-        </Link>
+        </Link> */}
         <Link
           to="contact"
           spy={true}

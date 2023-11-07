@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 const About = () => {
   return (
-    <div className=" min-h-[70vh] flex flex-col md:flex-row md:justify-between items-center md:mx-32 mx-5 mt-10">
+    <div className=" min-h-[70vh] flex flex-col md:flex-row md:justify-between items-center md:mx-32 mx-5 mt-2">
       <div className=" md:w-2/4 text-left">
         {/* <h2 className=" text-3xl font-semibold leading-tight">ABOUT US</h2> */}
         {/* <p className=" text-white mt-5 mb-4 text-start">
@@ -19,12 +19,12 @@ const About = () => {
           secure your future.
         </p> */}
         <h2 className=" text-2xl mt-2  font-semibold leading-tight">VISSION</h2>
-        <p className=" text-white mt-3 text-start">
+        <p className=" text-white mt-5 text-start">
           To churn products with cutting-edge skills and knowledge in alignment
           with global industry demands.
         </p>
-        <h2 className=" text-2xl mt-2  font-semibold leading-tight">VISION</h2>
-        <p className=" text-white mt-3 text-start">
+        <h2 className=" text-2xl mt-5  font-semibold leading-tight">VISION</h2>
+        <p className=" text-white mt-5 text-start">
           Hands-on training to imbue in trainees industry specific skills that
           are in high demand globally. Avoiding a mismatch of skills and
           job market demands.
@@ -35,7 +35,7 @@ const About = () => {
         </Link>
       </div>
 
-      <div className=" w-full md:w-2/4 mt-5">
+      <div className=" w-full md:w-2/4 mt-4">
         <img src={s3} alt="img" />
       </div>
     </div>

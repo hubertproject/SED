@@ -6,7 +6,7 @@ import a3 from "../assets/a3.png";
 import a5 from "../assets/a5.png";
 
 import a2 from "../assets/a2.png";
-import a7 from "../assets/a7.png";
+import a7 from "../assets/a7.jpg";
 import GermanSubtitle from "../components/GermanSubtitle";
 import CareerPath from "../components/CareerPath";
 
