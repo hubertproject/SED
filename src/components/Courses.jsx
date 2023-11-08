@@ -6,7 +6,7 @@ import c1 from "../assets/c1.jpg";
 import graphics from "../assets/graphics.jpeg";
 import c2 from "../assets/c2.jpg";
 import c3 from "../assets/c3.jpg";
-import c4 from "../assets/c4.jpg";
+import office from "../assets/office.png";
 import c5 from "../assets/c5.jpg";
 import Subtitle from "../components/Subtitle";
 import German from "../components/German";
@@ -48,9 +48,9 @@ const Courses = () => {
             description="Hardware are the physical components of electronic devices like computers and smartphones, including the CPU, memory, storage, and input/output devices, enabling their functionality."
           />
           <CoursesCard
-            img={c4}
-            title="German Language"
-            description="Learning German with SEDS Institute offers access to opportunities in Germany, aligns with the job market, and provides international certification to combat youth unemployment in Ghana."
+            img={office}
+            title="Microsoft Office"
+            description="Introduction to Word, Excel and PowerPoint"
           />
         </div>
       </div>

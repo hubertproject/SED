@@ -1,56 +1,52 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from "react";
-import se1 from "../assets/se1.jpg";
 import Heading from "../layout/Heading";
-import Button from "../layout/Button";
+import twitter from "/socials/twitter.png";
+import whatsapp from "/socials/whatsapp.png";
+import linkedin from "/socials/linkedin.png";
+import gmail from "/socials/gmail.png";
 
 const Contact = () => {
   return (
-    <div className=" min-h-screen flex flex-col items-center justify-center md:mx-32 mx-5 mt-10">
+    <div className="min-h-screen flex flex-col items-center justify-center mb-5">
       <Heading title1="Contact" title2="Us" />
 
-      <div className=" flex flex-col md:flex-row justify-between w-full">
-        <form className=" w-full md:w-2/5 space-y-5 pt-20">
-          <div className=" flex flex-col">
-            <label htmlFor="userName">Your Name</label>
-            <input
-              className=" py-3 px-2 rounded-lg hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-all"
-              type="text"
-              name="userName"
-              id="userName"
-              placeholder="enter your name"
-            />
+      <div className="w-full md:w-3/4 flex flex-col md:flex-row items-center mt-4 md:mx-5">
+        <div className="md:w-2/4">
+          <div className="ml-2">
+             
+            <p className="text-xl">Email: example@example.com</p>
+            <p className="text-xl">Phone: +1 123-456-7890</p>
+            <p className="text-xl">Address: 123 Main St, City, Country</p>
           </div>
-          <div className=" flex flex-col">
-            <label htmlFor="userEmail">Your Email</label>
-            <input
-              className=" py-3 px-2 rounded-lg hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-all"
-              type="email"
-              name="userEmail"
-              id="userEmail"
-              placeholder="enter your email"
-            />
-          </div>
-          <div className=" flex flex-col">
-            <label htmlFor="userNumber">Your Number</label>
-            <input
-              className=" py-3 px-2 rounded-lg hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-all"
-              type="text"
-              name="userNumber"
-              id="userNumber"
-              placeholder="enter your number"
-            />
-          </div>
-
-          <div className=" flex flex-row justify-center">
-            <Button title="Send Message" />
-          </div>
-        </form>
-
-        <div className=" w-full md:w-2/4">
-          <img src={se1} alt="img" />
+          
+      {/* Social Media Icons with Links */}
+      <div className="flex flex-wrap justify-left space-x-4 mt-4 ml-2">
+        <a href="/" target="_blank" rel="noreferrer">
+          <img src={whatsapp} alt="Whatsapp" />
+        </a>
+        <a href="/" target="_blank" rel="noreferrer">
+          <img src={gmail} alt="Gmail" />
+        </a>
+        <a href="/" target="_blank" rel="noreferrer">
+          <img src={linkedin} alt="LinkedIn" />
+        </a>
+       
+        <a href="/" target="_blank" rel="noreferrer">
+          <img src={twitter} alt="Twitter" />
+        </a>
+      </div>
+        </div>
+        <div className="md:w-2/3 mt-4">
+          <iframe
+            title="Google Map"
+            width="100%"
+            height="350"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d-12.3456789!3d23.4567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEyJzQz. . ."
+          ></iframe>
         </div>
       </div>
+
     </div>
   );
 };

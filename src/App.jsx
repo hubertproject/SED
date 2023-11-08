@@ -8,11 +8,9 @@ import Courses from "./components/Courses";
 import Reviews from "./components/Reviews";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
- 
-import Gallery from "./components/Gallery"
- 
- 
+// import ApplicationForm from "./components/ApplicationForm";
 
+import Gallery from "./components/Gallery";
 
 const App = () => {
   return (
@@ -45,16 +43,10 @@ const App = () => {
           </div>
         </main>
 
-        <Footer/>
-        
-        
+        <Footer />
       </div>
-      
-   
+      {/* <ApplicationForm /> */}
     </Router>
-    
-
-    
   );
 };
 
