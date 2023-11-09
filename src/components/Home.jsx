@@ -16,10 +16,10 @@ const Home = () => {
 
           
        
-          <p className="text-white mt-5 text-start text-3xl ">
+          <p className="text-white mt-5 text-start text-4xl ">
             Become an Elite <p>Software Engineer</p>
           </p>
-          <p className="text-whitey mt-5 text-start text-sm ">
+          <p className="text-whitey mt-5 text-start text-lg ">
             Access remote job placement opportunities with global companies and
             enjoy a western standard income and endless opportunities for growth
             and advancement

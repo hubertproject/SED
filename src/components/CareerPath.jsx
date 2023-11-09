@@ -15,11 +15,11 @@ const CareerPath = () => {
 
   return (
     <>
-      <div className="bg-blueblack-500 p-4 rounded-lg text-white mt-8 ml-4 mr-8 text-center md:mx-5">
+      <div className="bg-blueblack-500 p-4 rounded-lg text-white mt-8 ml-4 mr-8 text-left md:mx-5">
         <h2 className="text-4xl font-semibold">Career Paths</h2>
         <p className="mt-2">
           {careerPaths.map((path, index) => (
-            <p key={index} className="list-disc ml-4 text-center">
+            <p key={index} className="list-disc ml-4 text-left mt-4">
               {path}
             </p>
           ))}
