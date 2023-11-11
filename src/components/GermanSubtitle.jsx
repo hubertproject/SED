@@ -8,7 +8,7 @@
      <div className="text-left mt-6">
        <p className="text-xl">
           <p>German Language</p>
-          <h3>german lessonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</h3>
+          <h3>A short note on german lessons and its important</h3>
  
        </p>
      </div>

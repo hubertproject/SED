@@ -17,7 +17,7 @@ const Contact = () => {
              
             <p className="text-xl">Email: thesedsinstitute@gmail.com</p>
             <p className="text-xl">Phone: +233 5-456-7890</p>
-            <p className="text-xl">Address: Hope Hotel. Ho, Ghana</p>
+            <p className="text-xl">Address: Hope Village Hotel. Ho, Ghana</p>
           </div>
           
       {/* Social Media Icons with Links */}

@@ -8,7 +8,7 @@ const Subtitle = ({ sub1, sub2 }) => {
     <div className="text-left mt-6">
       <p className="text-xl">
          <p>Software Engineering</p>
-         <h3>sgdskjdgssssssssssssssdsgdsdsddsdlgjl</h3>
+         <h3>A short note on Software Engineering and its important</h3>
 
       </p>
     </div>
