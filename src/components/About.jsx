@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from "react";
 import b6 from "../assets/b6.jpg";
 import { Link } from "react-scroll";
@@ -11,10 +11,29 @@ const About = () => {
         <img src={b6} alt="img" style={{ maxWidth: "100%", height: "auto" }} />
       </div>
 
-      <div className="w-full md:w-3/4 text-center space-y-2 mb-10">
-        <Heading title1="WHAT WE" title2="DO" />
+      <div className="w-full md:w-3/4 text-center space-y-2 mb-10 text-left"> {/* Updated text alignment */}
+        <Heading title1="What We" title2="Do" />
 
-        <p className="text-lightText text-left">
+        <div className="text-left"> {/* Added a container for better spacing */}
+          <h2 className="text-2xl mt-2 font-semibold leading-tight">
+            Vision
+          </h2>
+          <p className="text-white mt-4">
+            To churn products with cutting-edge skills and knowledge in alignment
+            with global industry demands.
+          </p>
+
+          <h2 className="text-2xl mt-6 font-semibold leading-tight"> {/* Added more spacing between Vision and Mission */}
+            Mission
+          </h2>
+          <p className="text-white mt-5 mb-4">
+            Hands-on training to imbue in trainees industry-specific skills that
+            are in high demand globally. Avoiding a mismatch of skills and job
+            market demands.
+          </p>
+        </div>
+
+        <p className="text-lightText mt-5 text-left">
           The SEDS Institute is an equal and emerging industry-relevant
           opportunity provider. We do so by providing training in software
           engineering and the provision of language lessons specifically in
@@ -29,22 +48,6 @@ const About = () => {
           produce one thing, and the job market is looking for another. A major
           reason for youth unemployment. This abyss can, however, be escaped if
           you make the right decision now.
-        </p>
-
-        <h2 className="text-2xl mt-2 font-semibold leading-tight text-left">
-          VISION
-        </h2>
-        <p className="text-white mt-2 text-start">
-          To churn products with cutting-edge skills and knowledge in alignment
-          with global industry demands.
-        </p>
-        <h2 className="text-2xl mt-2 font-semibold leading-tight text-left">
-          MISSION
-        </h2>
-        <p className="text-white mt-5 text-start mb-4">
-          Hands-on training to imbue in trainees industry-specific skills that
-          are in high demand globally. Avoiding a mismatch of skills and job
-          market demands.
         </p>
 
         <Link to="contact" spy={true} smooth={true} duration={500}></Link>
