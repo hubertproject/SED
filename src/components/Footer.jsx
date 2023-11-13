@@ -37,7 +37,7 @@ const Footer = () => {
 
       {/* Up Arrow */}
       <button
-        className={`bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 fixed bottom-10 right-10 transform ${
+        className={`bg-red-500 text-white px-4 py-2 rounded hover:bg-maroon fixed bottom-10 right-10 transform ${
           scrolling ? "rotate-180 translate-y-4" : ""
         }`}
         onClick={scrollToTop}

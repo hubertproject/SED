@@ -28,7 +28,7 @@ const EnrollCard = () => {
         
         <Link to="/Form">
         
-          <Button title="Enroll Now" />
+          <Button title="Enrol Now" />
           
         </Link>
         </div>

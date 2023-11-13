@@ -4,7 +4,7 @@ import React from "react";
 
 const Stages = () => {
   return (
-    <div className="bg-blue text-white p-8 mt-4 md:mx-2 sm:mx-2">
+    <div className="bg-blue text-white md-auto p-2 pr-2">
       {" "}
       {/* Adjusted margin for small screens */}
       <div className="text-4xl font-bold mb-4 text-center text-maroon">
