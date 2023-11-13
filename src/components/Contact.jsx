@@ -37,15 +37,15 @@ const Contact = () => {
         </a>
       </div>
         </div>
-        <div className="md:w-3/3 mt-4">
+        <div className="md:w-3/3 mt-4 object-cover object-contain object-center md:p-0 p-6">
          
           <iframe
             title="Google Map"
-            width="400"
+            width="450"
             height="350"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.420332667431!2d0.43293297315784185!3d6.594566093399175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10273bd40371462d%3A0xa7b585137a1e0e60!2sHope%20Village%20Hotel!5e0!3m2!1sen!2sgh!4v1699451584284!5m2!1sen!2sgh"
-            
-            style={{ border: 0 }}
+            className='p-6 md:p-0'
+            style={{ border: 2}}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
