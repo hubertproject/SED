@@ -1,19 +1,23 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
- // Subtitle.jsx
- import React from "react";
+// Subtitle.jsx
+import React from "react";
 
- const Subtitle = ({ sub1, sub2 }) => {
-   return (
-     <div className="text-left mt-6">
-       <p className="text-xl">
-          <p>German Language</p>
-          <h3>A short note on german lessons and its important</h3>
- 
-       </p>
-     </div>
-   );
- };
- 
- export default Subtitle;
- 
+const Subtitle = ({ sub1, sub2 }) => {
+  return (
+    <div className="text-left mt-6">
+      <p className="text-1xl">
+      <div className="text-left mt-6 text-2xl">German Language Lessons</div>
+        <h3>
+          Germany is an economically vibrant country. Germans, are amongst the
+          smartest in the world. They are looking for skilled-based
+          professionals. They are looking for skill oriented people to build the
+          country. First on the list are IT specialists followed closely by
+          nurses then engineers. Learn German now for a future proof career.
+        </h3>
+      </p>
+    </div>
+  );
+};
+
+export default Subtitle;
