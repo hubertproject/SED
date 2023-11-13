@@ -29,8 +29,13 @@ const Courses = () => {
           />
           <CoursesCard
             img={graphics}
-            title="Graphic Design"
+            title="Systems Administration"
             description="Graphic design is pivotal for visually conveying ideas through images, text, and layout, with a significant impact on marketing, web, and print, as it focuses on composition, typography, and color to achieve effective communication."
+          />
+          <CoursesCard
+            img={c5}
+            title="Computer Hardware"
+            description="Hardware are the physical components of electronic devices like computers and smartphones, including the CPU, memory, storage, and input/output devices, enabling their functionality."
           />
           <CoursesCard
             img={c2}
@@ -39,17 +44,12 @@ const Courses = () => {
           />
           <CoursesCard
             img={c3}
-            title="Phone repairs and servicing"
-            description="Phone servicing and repairs, carried out by skilled technicians with specialized tools and quality replacement parts, are vital for extending a phone's lifespan and minimizing electronic waste."
-          />
-          <CoursesCard
-            img={c5}
-            title="Computer Hardware"
-            description="Hardware are the physical components of electronic devices like computers and smartphones, including the CPU, memory, storage, and input/output devices, enabling their functionality."
+            title=" Phone Repair &  Servicing"
+            description="How to repair phones and know how the components work together"
           />
           <CoursesCard
             img={office}
-            title="Microsoft Office"
+            title="Graphic Design & MS Office"
             description="Introduction to Word, Excel and PowerPoint"
           />
         </div>

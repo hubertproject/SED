@@ -18,7 +18,7 @@ const About = () => {
           <h2 className="text-2xl mt-2 font-semibold leading-tight">
             Vision
           </h2>
-          <p className="text-white mt-4">
+          <p className="text-white">
             To churn products with cutting-edge skills and knowledge in alignment
             with global industry demands.
           </p>
@@ -26,7 +26,7 @@ const About = () => {
           <h2 className="text-2xl mt-6 font-semibold leading-tight"> {/* Added more spacing between Vision and Mission */}
             Mission
           </h2>
-          <p className="text-white mt-5 mb-4">
+          <p className="text-white">
             Hands-on training to imbue in trainees industry-specific skills that
             are in high demand globally. Avoiding a mismatch of skills and job
             market demands.
@@ -34,6 +34,8 @@ const About = () => {
         </div>
 
         <p className="text-lightText mt-5 text-left">
+        <div className="text-left space-y-2 mb-10"> 
+        <h1 className="text-left font-bold text-2xl mt-2">About Us</h1>
           The SEDS Institute is an equal and emerging industry-relevant
           opportunity provider. We do so by providing training in software
           engineering and the provision of language lessons specifically in
@@ -48,10 +50,12 @@ const About = () => {
           produce one thing, and the job market is looking for another. A major
           reason for youth unemployment. This abyss can, however, be escaped if
           you make the right decision now.
+          </div>
         </p>
 
         <Link to="contact" spy={true} smooth={true} duration={500}></Link>
       </div>
+      
     </div>
   );
 };

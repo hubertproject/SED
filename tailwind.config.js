@@ -19,7 +19,9 @@ export default {
         'gray': '#808080e2',
         'gwhite:':'#03192e',
         'blueblack':'#01032b',
-        'whit' :'#dae8e5'
+        'whit' :'#dae8e5',
+        'maroon':'#800000',
+        'gold':'#FFD700'
       },
     },
   },

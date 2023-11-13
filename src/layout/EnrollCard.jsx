@@ -9,11 +9,9 @@ const EnrollCard = () => {
       <div className=" text-center border border-gray-300 rounded-lg p-4 bg-whit item-center">
          
         <p className="text-black mt-2 text-center text-lg font-bold">
-          Ready to lauch your career as a
+        Ready to launch your career as an Elite Software Developer!
         </p>
-        <p className="text-black mt-1 text-center text-lg font-bold">
-          top-quality software developer?
-        </p>
+         
         <p className="text-black mt-5 text-center text-sm">
           With experts instructors, hands on training, and remote job placement,  
           
