@@ -28,7 +28,7 @@ const Footer = () => {
 
   return (
     <div className="md:px-5 px-3 ">
-      <div className="text-white opacity-50 flex flex-col md:flex-row justify-between items-center my-5">
+      <div className="text-white opacity-50 flex flex-col md:flex-row justify-between items-center my-5 text-sm">
         <p>@ Copyright 2023 | The SEDS Institute</p>
       </div>
 
