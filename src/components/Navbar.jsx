@@ -13,17 +13,17 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex flex-row justify-between p-5 px-3  md:px-5 bg-white">
+      <div className="flex flex-row justify-between p-2 px-2  md:px-5 bg-white">
         <div className="flex items-center">  
           <Link to="home" className="p-1 cursor-pointer">
             <img
     src={sedlogo}
     alt="Logo"
-    style={{ width: "80px", height: "25px" }}  
+    style={{ width: "100px", height: "40px" }}  
   /> 
           </Link>
         </div>
-        <div className="text-blueblack pr-4 text-2xl font-bold">The SEDS Institute</div>
+        <div className="text-blueblack pr-2 text-2xl font-bold">The SEDS Institute</div>
 
         <nav className="hidden md:flex gap-5 font-medium p-1 text-lg ">
           <Link
@@ -31,7 +31,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black  text-center transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+            className="text-black  text-center transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
             onClick={handleChange}
           >
             Home
@@ -41,7 +41,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
             onClick={handleChange}
           >
             About
@@ -51,7 +51,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
             onClick={handleChange}
           >
             Courses
@@ -71,7 +71,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
             onClick={handleChange}
           >
              Gallery
@@ -81,7 +81,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
             onClick={handleChange}
           >
             Contact
@@ -104,7 +104,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
           onClick={handleChange}
         >
           Home
@@ -114,7 +114,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
           onClick={handleChange}
         >
           About
@@ -124,7 +124,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
           onClick={handleChange}
         >
           Courses
@@ -144,7 +144,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
           onClick={handleChange}
         >
           Gallery
@@ -154,7 +154,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           duration={500}
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
+          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
           onClick={handleChange}
         >
           Contact

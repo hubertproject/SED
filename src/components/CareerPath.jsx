@@ -24,7 +24,7 @@ const CareerPath = () => {
   return (
     <>
       <div className="bg-blueblack-500 p-4 rounded-lg text-white mt-4 mr-4 text-center md:mx-5">
-        <div className="text-4xl font-semibold text-maroon">Career Paths</div>
+        <div className="text-4xl font-semibold text-off-white">Career Paths</div>
         <p className="mt-2">
           {pathsInRows.map((row, rowIndex) => (
             <div key={rowIndex} className="flex mt-4">

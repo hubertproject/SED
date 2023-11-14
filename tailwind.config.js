@@ -21,7 +21,8 @@ export default {
         'blueblack':'#01032b',
         'whit' :'#dae8e5',
         'maroon':'#800000',
-        'gold':'#FFA500'
+        'gold':'#FFA500',
+        'off-white':'#F8F0E3'
       },
     },
   },
