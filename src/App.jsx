@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Courses from "./components/Courses";
-import Reviews from "./components/Reviews";
+import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 // import ApplicationForm from "./components/ApplicationForm";
@@ -31,8 +31,8 @@ const App = () => {
             <Courses />
           </div>
 
-          <div id="reviews">
-            <Reviews />
+          <div id="review">
+            <Review />
           </div>
           <div id="gallery">
             <Gallery />
