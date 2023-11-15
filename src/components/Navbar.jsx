@@ -56,18 +56,9 @@ const Navbar = () => {
           >
             Courses
           </Link>
-          {/* <Link
-            to="reviews"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
-            onClick={handleChange}
-          >
-            Reviews
-          </Link> */}
+         
           <Link
-            to="contact"
+            to="gallery"
             spy={true}
             smooth={true}
             duration={500}
@@ -77,7 +68,7 @@ const Navbar = () => {
              Gallery
           </Link>
           <Link
-            to="gallery"
+            to="contact"
             spy={true}
             smooth={true}
             duration={500}
@@ -129,18 +120,9 @@ const Navbar = () => {
         >
           Courses
         </Link>
-        {/* <Link
-          to="reviews"
-          spy={true}
-          smooth={true}
-          duration={500}
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-yellow"
-          onClick={handleChange}
-        >
-          Reviews
-        </Link> */}
+         
         <Link
-          to="contact"
+          to="gallery"
           spy={true}
           smooth={true}
           duration={500}
@@ -150,7 +132,7 @@ const Navbar = () => {
           Gallery
         </Link>
         <Link
-          to="gallery"
+          to="contact"
           spy={true}
           smooth={true}
           duration={500}

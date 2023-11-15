@@ -37,13 +37,13 @@ function Review() {
 
   return (
     <div>
-      <Heading title1="Our" title2="Reviews" className="mb-8" />
-      <div className="w-full mt-20 overflow-hidden px-10">
+      <Heading title1="Our" title2="Reviews" className="mt-5" />
+      <div className="w-full mt-20 overflow-hidden px-10 mt-10">
         <div className="space-y-20"> {/* Add space-y to control the space between sets */}
           <Slider {...settings}>
             {data.map((d) => (
               <div key={d.name} className="w-full">
-                <div className="bg-white h-[400px] text-black rounded-xl">
+                <div className="bg-white h-[400px] text-black rounded-xl mb-8">
                   <div className="h-56 bg-indigo-500 flex justify-center items-center rounded-t-xl b">
                     <img src={d.img} alt="" className="h-44 w-44 rounded-full" />
                   </div>
