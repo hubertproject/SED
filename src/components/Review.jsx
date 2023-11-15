@@ -38,7 +38,7 @@ function Review() {
   return (
     <div>
       <Heading title1="Our" title2="Reviews" className="mt-5" />
-      <div className="w-full mt-20 overflow-hidden px-10 mt-10">
+      <div className="w-full mt-20 overflow-hidden px-10 mt-5">
         <div className="space-y-20"> {/* Add space-y to control the space between sets */}
           <Slider {...settings}>
             {data.map((d) => (
@@ -74,12 +74,12 @@ const data = [
     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
-    name: `Naa Adebayo`,
+    name: `Naa Ama`,
     img: `/students/a3.png`,
     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
-    name: `Rigo Louie`,
+    name: `Man Louie`,
     img: `/students/a4.png`,
     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
