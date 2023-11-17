@@ -1,53 +1,34 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Contact from "./components/Contact";
 import About from "./components/About";
 import Courses from "./components/Courses";
 import Review from "./components/Review";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-// import ApplicationForm from "./components/ApplicationForm";
-
 import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
+import ApplicationForm from "./components/ApplicationForm";
 
-const App = () => {
+function App() {
   return (
     <Router>
       <div>
         <Navbar />
-
-        <main>
-          <div id="home">
-            <Home />
-          </div>
-
-          <div id="about">
-            <About />
-          </div>
-
-          <div id="courses">
-            <Courses />
-          </div>
-
-          <div id="review">
-            <Review />
-          </div>
-          <div id="gallery">
-            <Gallery />
-          </div>
-
-          <div id="contact">
-            <Contact />
-          </div>
-        </main>
-
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/review" element={<Review />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/ApplicationForm" element={<ApplicationForm />} />
+        </Routes>
         <Footer />
       </div>
-      {/* <ApplicationForm /> */}
     </Router>
   );
-};
+}
 
 export default App;

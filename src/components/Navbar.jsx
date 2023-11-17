@@ -1,85 +1,72 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 import sedlogo from "../assets/sedlogo.jpg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const [galleryContainerClass, setGalleryContainerClass] = useState("");
 
   const handleChange = () => {
-    setMenu(false);  
+    setMenu(!menu);
+    setGalleryContainerClass(menu ? "" : "z-0"); // Set z-index based on menu state
   };
 
   return (
-    <div>
-      <div className="flex flex-row justify-between p-2 px-2  md:px-5 bg-white">
-        <div className="flex items-center">  
-          <Link to="home" className="p-1 cursor-pointer">
-            <img
-    src={sedlogo}
-    alt="Logo"
-    style={{ width: "100px", height: "40px" }}  
-  /> 
-          </Link>
+    <div className="relative z-50">
+      <div className={`flex flex-row justify-between p-2 px-2 md:px-5 bg-white ${galleryContainerClass}`}>
+        <div className="flex items-center">
+          <NavLink to="/" className="p-1 cursor-pointer">
+            <img src={sedlogo} alt="Logo" style={{ width: "100px", height: "40px" }} />
+          </NavLink>
         </div>
         <div className="text-maroon pr-2 text-2xl font-bold">The SEDS Institute</div>
 
-        <nav className="hidden md:flex gap-5 font-medium p-1 text-lg ">
-          <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
+        <nav className="hidden md:flex gap-5 font-medium p-1 text-lg">
+          <NavLink
+            to="/"
             className="text-black  text-center transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+            activeClassName="active"
             onClick={handleChange}
           >
             Home
-          </Link>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={500}
+          </NavLink>
+          <NavLink
+            to="/about"
             className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+            activeClassName="active"
             onClick={handleChange}
           >
             About
-          </Link>
-          <Link
-            to="courses"
-            spy={true}
-            smooth={true}
-            duration={500}
+          </NavLink>
+          <NavLink
+            to="/courses"
             className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+            activeClassName="active"
             onClick={handleChange}
           >
             Courses
-          </Link>
-         
-          <Link
-            to="gallery"
-            spy={true}
-            smooth={true}
-            duration={500}
+          </NavLink>
+          <NavLink
+            to="/gallery"
             className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+            activeClassName="active"
             onClick={handleChange}
           >
-             Gallery
-          </Link>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
+            Gallery
+          </NavLink>
+          <NavLink
+            to="/contact"
             className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+            activeClassName="active"
             onClick={handleChange}
           >
             Contact
-          </Link>
+          </NavLink>
         </nav>
 
-        <div className="flex md:hidden" onClick={() => setMenu(!menu)}>
+        <div className="flex md:hidden" onClick={handleChange}>
           <div className="p-2">
             <AiOutlineMenu size={24} style={{ color: "black" }} />
           </div>
@@ -90,57 +77,46 @@ const Navbar = () => {
           menu ? "translate-x-0" : "-translate-x-full"
         } md:hidden flex flex-col absolute bg-[#ffffff] left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-4 w-full h-fit transition-transform duration-300`}
       >
-        <Link
-          to="home"
-          spy={true}
-          smooth={true}
-          duration={500}
+        <NavLink
+          to="/"
           className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+          activeClassName="active"
           onClick={handleChange}
         >
           Home
-        </Link>
-        <Link
-          to="about"
-          spy={true}
-          smooth={true}
-          duration={500}
+        </NavLink>
+        <NavLink
+          to="/about"
           className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+          activeClassName="active"
           onClick={handleChange}
         >
           About
-        </Link>
-        <Link
-          to="courses"
-          spy={true}
-          smooth={true}
-          duration={500}
+        </NavLink>
+        <NavLink
+          to="/courses"
           className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+          activeClassName="active"
           onClick={handleChange}
         >
           Courses
-        </Link>
-         
-        <Link
-          to="gallery"
-          spy={true}
-          smooth={true}
-          duration={500}
+        </NavLink>
+        <NavLink
+          to="/gallery"
           className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+          activeClassName="active"
           onClick={handleChange}
         >
           Gallery
-        </Link>
-        <Link
-          to="contact"
-          spy={true}
-          smooth={true}
-          duration={500}
+        </NavLink>
+        <NavLink
+          to="/contact"
           className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+          activeClassName="active"
           onClick={handleChange}
         >
           Contact
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Button from "../layout/Button";
-
 import w1 from "../assets/w1.jpg";
-
 import { Link } from "react-router-dom";
+import About from "../components/About";
+import Review from "../components/Review";
 
 const Home = () => {
   return (
@@ -20,7 +20,8 @@ const Home = () => {
             and advancement
           </p>
           <div className="mt-5"></div>
-          <Link to="/Form">
+          <Link to="/ApplicationForm">
+             
             <Button title="Get Started" />
           </Link>
         </div>
@@ -29,6 +30,10 @@ const Home = () => {
           <img src={w1} alt="img" height="800" width="800" />
         </div>
       </div>
+
+      {/* Render the About component */}
+      <About />
+      <Review/>
     </div>
   );
 };

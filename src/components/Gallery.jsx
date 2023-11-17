@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
- /* eslint-disable no-unused-vars */
+ // Gallery.js
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -57,12 +58,11 @@ function Gallery() {
     }
   };
 
-  const handleCloseModal = (e) => {
-    // Check if the click target is the close button
-    if (e.target.className.includes("close-button")) {
-      setSelectedImage(null);
-    }
+  const handleCloseModal = () => {
+    setSelectedImage(null);
   };
+  
+  
 
   const handleNextImage = () => {
     setSelectedImage((prevIndex) => (prevIndex === data.length - 1 ? 0 : prevIndex + 1));
@@ -100,12 +100,14 @@ function Gallery() {
               className="max-w-full max-h-full rounded mx-auto"
               onClick={handleCloseModal}
             />
-            <button
-              onClick={handleCloseModal}
-              className="absolute top-4 right-4 text-red-500 font-bold text-2xl close-button"
-            >
-              Close
-            </button>
+        <button
+  onClick={handleCloseModal}
+  className="absolute top-4 right-4 text-red-500 font-bold text-2xl close-button"
+>
+  Close
+</button>
+
+
             <div className="mt-4 flex justify-between items-center">
               <button
                 onClick={handlePrevImage}
@@ -137,8 +139,6 @@ const data = [
   { img: `/students/h3.jpg` },
   { img: `/students/h1.jpg` },
   { img: `/students/h5.jpg` },
-  
- 
 ];
 
 export default Gallery;
