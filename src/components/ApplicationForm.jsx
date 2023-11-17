@@ -198,7 +198,7 @@ const ApplicationForm = () => {
     id="applicantName"
     name="applicantName"
     className="form-textarea h-20 w-3/4"
-    placeholder="Applicant's Signature"
+    placeholder="Please Only Sign After Printing"
   ></textarea>
 </div>
 
