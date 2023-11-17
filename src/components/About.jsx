@@ -3,7 +3,7 @@ import React from "react";
 import b6 from "../assets/b6.jpg";
 import { Link } from "react-scroll";
 import Heading from "../layout/Heading";
-import EnrollCard from "../Layout/EnrollCard";
+ 
 
 const About = () => {
   return (
