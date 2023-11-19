@@ -20,7 +20,7 @@ const Home = () => {
             and advancement
           </p>
           <div className="mt-5"></div>
-          <Link to="/ApplicationForm">
+          <Link to="/PaymentForm">
              
             <Button title="Get Started" />
           </Link>

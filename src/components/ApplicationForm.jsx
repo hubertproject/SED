@@ -452,8 +452,6 @@ const ApplicationForm = () => {
   );
 };
 
-const printForm = () => {
-  window.print();
-};
+  
 
 export default ApplicationForm;

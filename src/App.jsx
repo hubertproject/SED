@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -10,9 +11,18 @@ import Review from "./components/Review";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 import ApplicationForm from "./components/ApplicationForm";
- 
+import PaymentForm from "./components/PaymentForm";
 
 function App() {
+  const onPaymentSuccess = () => {
+    console.log('Payment success function called!');
+    // Handle the logic you want to execute on successful payment
+    // For example, navigate to the ApplicationForm page
+     
+    navigate('/ApplicationForm');
+  };
+  
+
   return (
     <Router>
       <div>
@@ -24,8 +34,14 @@ function App() {
           <Route path="/review" element={<Review />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/ApplicationForm" element={<ApplicationForm />} />
- 
+          <Route
+            path="/ApplicationForm"
+            element={<ApplicationForm />}
+          />
+          <Route
+            path="/PaymentForm"
+            element={<PaymentForm onPaymentSuccess={onPaymentSuccess} />}
+          />
         </Routes>
         <Footer />
       </div>
