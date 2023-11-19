@@ -10,7 +10,7 @@ import Review from "./components/Review";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 import ApplicationForm from "./components/ApplicationForm";
-// import PaymentForm from "./components/PaymentForm";
+ 
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/ApplicationForm" element={<ApplicationForm />} />
-          {/* <Route path="/PaymentForm" element={<PaymentForm />} /> */}
+ 
         </Routes>
         <Footer />
       </div>
