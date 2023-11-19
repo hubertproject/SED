@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+ /* eslint-disable no-unused-vars */
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import PaystackPop from '@paystack/inline-js';
@@ -49,8 +49,6 @@ const PaymentForm = () => {
     payWithPaystack(e);
   };
 
-  
-
   return (
     <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-md shadow-md">
       <h2 className="text-2xl font-bold mb-4 text-center text-maroon">Payment Platform</h2>
@@ -65,6 +63,7 @@ const PaymentForm = () => {
             onChange={(e) => setEmail(e.target.value)}
             id="email-address"
             className="border p-2 w-full"
+            style={{ color: 'black' }}
           />
         </div>
         <div className="mb-4">
@@ -77,6 +76,7 @@ const PaymentForm = () => {
             onChange={(e) => setAmount(e.target.value)}
             id="amount"
             className="border p-2 w-full"
+            style={{ color: 'black' }}
           />
         </div>
         <div className="mb-4">
@@ -89,6 +89,7 @@ const PaymentForm = () => {
             onChange={(e) => setFirstname(e.target.value)}
             id="first-name"
             className="border p-2 w-full text-left"
+            style={{ color: 'black' }}
           />
         </div>
         <div className="mb-4">
@@ -101,11 +102,12 @@ const PaymentForm = () => {
             onChange={(e) => setLastname(e.target.value)}
             id="last-name"
             className="border p-2 w-full text-left"
+            style={{ color: 'black' }}
           />
         </div>
         <div className="form-submit">
           <button type="submit" className="bg-gold text-black px-4 py-2 rounded hover:bg-green-700 focus:outline-none w-full">
-            Proceed to Payment(150 GHS)
+            Proceed to Payment (150 GHS)
           </button>
         </div>
       </form>

@@ -1,7 +1,7 @@
-/* eslint-disable no-unused-vars */
+ /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
@@ -14,15 +14,19 @@ import ApplicationForm from "./components/ApplicationForm";
 import PaymentForm from "./components/PaymentForm";
 
 function App() {
+  const [paymentMade, setPaymentMade] = useState(false);
+
   const onPaymentSuccess = () => {
     console.log('Payment success function called!');
-    // Handle the logic you want to execute on successful payment
-    // For example, navigate to the ApplicationForm page
-     
-    navigate('/ApplicationForm');
+    setPaymentMade(true);
+  };
+
+  const navigateToPaymentForm = () => {
+    if (!paymentMade) {
+      return <Navigate to="/PaymentForm" />;
+    }
   };
   
-
   return (
     <Router>
       <div>
@@ -36,7 +40,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/ApplicationForm"
-            element={<ApplicationForm />}
+            element={navigateToPaymentForm(<ApplicationForm />)}
           />
           <Route
             path="/PaymentForm"

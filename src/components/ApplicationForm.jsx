@@ -441,7 +441,7 @@ const ApplicationForm = () => {
                   type="submit"
                   className="bg-green-500 hover:bg-red-700 text-white-500 font-bold py-2 px-4 rounded mr-4 w-full"
                 >
-                  Proceed to Payment(GHS 150)
+                   Submit
                 </button>
               </div>
             </div>

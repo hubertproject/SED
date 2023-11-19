@@ -26,7 +26,7 @@ const EnrollCard = () => {
         </p>
         <div className="text-center mt-2 pt-2">
         
-        <Link to="/ApplicationForm">
+        <Link to="/PaymentForm">
              
              <Button title="Enrol Now" />
            </Link>
