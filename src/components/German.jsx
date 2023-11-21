@@ -20,10 +20,10 @@ const German = () => {
       </div>
 
       <div className="flex flex-wrap gap-6 justify-center text-black">
-        <GermanCard img={a7} title="A1" description="A short note" />
-        <GermanCard img={a5} title="A2" description="A short note" />
-        <GermanCard img={b4} title="B1" description="A short note" />
-        <GermanCard img={a2} title="B2" description="A short note" />
+        <GermanCard img={a7} title="A1" description="" />
+        <GermanCard img={a5} title="A2" description="" />
+        <GermanCard img={b4} title="B1" description="" />
+        <GermanCard img={a2} title="B2" description="" />
       </div>
       <CareerPath />
     </div>
