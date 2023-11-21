@@ -20,8 +20,8 @@ const Stages = () => {
           <h4 className="text-xl font-bold mb-2">Preparatory Tuition</h4>
           <p className="text-sm">
             Our preparatory tuition is in two folds, the preparation in Tech
-            subjects to open doors to the Microverse Training or opportunities
-            in Germany. The choice is the trainee's. The other is the provision
+            subjects to open doors to the <a href="https://www.microverse.org/" className="text-blue-500" >Microverse</a> Training or opportunities
+            in <a href="https://www.germany.travel/en/index.html" className="text-blue-500">Germany</a>. The choice is the trainee's. The other is the provision
             of German Language Lessons to meet the requirement for the Dual
             Vocational Training.
           </p>
@@ -31,7 +31,7 @@ const Stages = () => {
           <div className="text-4xl font-bold mb-4">02</div>
           <h4 className="text-xl font-bold mb-2">Main Program</h4>
           <p className="text-sm">
-          Enrol onto the Microverse Training program for free for 10 months or take advantage of the Dual Vocational Training offered also for free in Germany with training allowance.
+          Enrol onto the <a href="https://www.microverse.org/" className="text-blue-500">Microverse</a> Training program for free for 10 months or take advantage of the Dual Vocational Training offered also for free in Germany with training allowance.
 
           </p>
         </div>
