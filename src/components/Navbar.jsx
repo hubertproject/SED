@@ -26,7 +26,7 @@ const Navbar = () => {
         <nav className="hidden md:flex gap-5 font-medium p-1 text-lg">
           <NavLink
             to="/"
-            className="text-black  text-center transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+            className="text-maroon  text-center transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
             activeClassName="active"
             onClick={handleChange}
           >
@@ -34,7 +34,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             to="/about"
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+            className="text-maroon transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
             activeClassName="active"
             onClick={handleChange}
           >
@@ -42,7 +42,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             to="/courses"
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+            className="text-maroon transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
             activeClassName="active"
             onClick={handleChange}
           >
@@ -50,7 +50,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             to="/gallery"
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+            className="text-maroon transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
             activeClassName="active"
             onClick={handleChange}
           >
@@ -58,7 +58,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             to="/contact"
-            className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+            className="text-maroon transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
             activeClassName="active"
             onClick={handleChange}
           >
@@ -68,7 +68,7 @@ const Navbar = () => {
 
         <div className="flex md:hidden" onClick={handleChange}>
           <div className="p-2">
-            <AiOutlineMenu size={24} style={{ color: "black" }} />
+            <AiOutlineMenu size={30} style={{ color: "black" }} />
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
       >
         <NavLink
           to="/"
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+          className="text-maroon transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
           activeClassName="active"
           onClick={handleChange}
         >
@@ -87,7 +87,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/about"
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+          className="text-maroon transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
           activeClassName="active"
           onClick={handleChange}
         >
@@ -95,7 +95,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/courses"
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+          className="text-maroon transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
           activeClassName="active"
           onClick={handleChange}
         >
@@ -103,7 +103,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/gallery"
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+          className="text-maroon transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
           activeClassName="active"
           onClick={handleChange}
         >
@@ -111,7 +111,7 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           to="/contact"
-          className="text-black transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
+          className="text-maroon transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
           activeClassName="active"
           onClick={handleChange}
         >

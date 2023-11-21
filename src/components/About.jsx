@@ -33,6 +33,9 @@ const About = () => {
             market demands.
           </p>
         </div>
+        {/* <div className="w-full md:w-2/3 mb-10 mt-5">
+        <img src={b6} alt="img" style={{ maxWidth: "100%", height: "auto" }} />
+      </div> */}
 
         <p className="text-lightText mt-5 text-left">
         <div className="text-left space-y-2 mb-5"> 
