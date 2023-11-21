@@ -41,7 +41,7 @@ const ApplicationForm = () => {
 
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const [previewMode, setPreviewMode] = useState(false);
+   
 
 
   const {
@@ -203,13 +203,9 @@ const ApplicationForm = () => {
       setErrorMessage("An error occurred. Please try again.");
     }
   };
-  const togglePreviewMode = () => {
-    setPreviewMode(!previewMode);
-  };
+  
 
-  const handlePrint = () => {
-    window.print();
-  };
+  
   return (
     
     <div className="bg-white-100 min-h-screen flex items-center justify-center">
@@ -227,14 +223,14 @@ const ApplicationForm = () => {
                 </p>
                 <ul className="list-disc list-inside text-lg text-white">
                   <li>
-                    After filling the Form Preview it and Print it 
+                    After filling the Form Preview it and Print 
                   </li>
                   <li>
                     Click on the Edit button and now Submit 
                   </li>
                    
                   <li>
-                    Attach your Preference School Certificate 
+                    Attach your Choosen School Certificate 
                   </li>
                   <li>
                     Attach Your Passport Picture and when reporting
@@ -249,70 +245,8 @@ const ApplicationForm = () => {
           <h2 className="text-2xl font-semibold mb-4 mt-4">
             Personal Information
           </h2>
-          {previewMode ? (
-  // Render form data in preview mode
-  <div>
-    <h2 className="text-2xl font-semibold mb-4">Preview</h2>
-    <p>First Name: {firstName}</p>
-    <p>Middle Name: {middleName}</p>
-    <p>Last Name: {lastName}</p>
-    <p>Date of Birth: {dateOfBirth}</p>
-    <p>Age: {age}</p>
-    <p>Home Address: {homeAddress}</p>
-    <p>Contact Phone No.: {contactPhone}</p>
-    <p>Email Address: {emailAddress}</p>
-
-    <h2 className="text-2xl font-semibold mb-4 mt-4">Education</h2>
-    <p>BECE: {beceSchool}</p>
-    <p>WASSCE: {wascceSchool}</p>
-    <p>High School Diploma: {highSchoolDiplomaSchool}</p>
-    <p>Degree: {degreeSchool}</p>
-    <p>HND: {hndSchool}</p>
-    <p>Masters: {mastersSchool}</p>
-
-    <h2 className="text-2xl font-semibold mb-4">Work Experience</h2>
-    <p>Company Name: {companyName}</p>
-    <p>Years: {years}</p>
-
-    <p className="text-sm w-3/4 ml-12 text-gray-600 mt-4">
-      Attached a copy of any of the above certificates [just one]
-    </p>
-
-    <h2 className="text-2xl font-semibold mb-4">Additional Information</h2>
-    <p>Note: {note}</p>
-
-    <h2 className="text-2xl font-semibold mb-4">Parent/Sponsor</h2>
-    <p>Parent/Sponsor Name: {parentName}</p>
-    <p>Parent/Sponsor Phone No.: {parentPhone}</p>
-
-    <h2 className="text-2xl font-semibold mb-4">
-      How did you hear about Us?
-    </h2>
-    <p>Radio: {radio}</p>
-    <p>Sales Officers: {salesOfficers}</p>
-    <p>Social Media: {socialMedia}</p>
-
-    <div className="text-red-500 border border-red-500 p-4 rounded">
-      <p className="mb-2">
-        Preparatory Tuition Fee is Payable ONLY at the address below
-      </p>
-    </div>
-
-    <div className="mt-4 flex justify-between">
-      <label htmlFor="applicantName" className="text-sm font-medium w-1/4">
-        Signature:
-      </label>
-      <p>{/* Render the signature here */}</p>
-    </div>
-
-    <div className="mt-4 flex justify-between">
-      <label htmlFor="signatureDate" className="text-sm font-medium w-1/4">
-        Date:
-      </label>
-      <p>{signatureDate}</p>
-    </div>
-  </div>
-) : (
+          
+  
           <form className="" onSubmit={handleSubmit}>
             <div className="mb-4 flex justify-between">
               <label htmlFor="firstName" className="text-sm font-medium w-1/4">
@@ -689,54 +623,14 @@ const ApplicationForm = () => {
               </div>
             </div>
             </form>
-          )}
-          <div className="flex justify-end items-center">
-            {successMessage && (
-              {/* <p className="text-green-500 mt-3">{successMessage}</p> */}
-            )}
-            {/* {errorMessage && <p className="text-red-500 mt-3">{errorMessage}</p>} */}
-            {previewMode ? (
-              // Render submit button when not in preview mode
-              <button
-                type="button"
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4 w-full mt-5"
-                onClick={togglePreviewMode}
-              >
-                Edit
-              </button>
-            ) : (
-              // Render preview button when in edit mode
-              <button
-                type="button"
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4 w-full mt-5"
-                onClick={togglePreviewMode}
-              >
-                Preview
-              </button>
-            )}
-            {/* {!previewMode && (
-              // Render submit button when not in preview mode
-              <button
-                type="submit"
-                className="bg-green-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-4 w-full mt-5"
-              >
-                Submit
-              </button>
-            )} */}
-            {previewMode && (
-              // Render print button when in preview mode
-              <button
-                type="submit"
-                className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded w-full mt-5"
-                onClick={handlePrint}
-              >
-                Print
-              </button>
-            )}
+          
+         
+          
+          
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 
