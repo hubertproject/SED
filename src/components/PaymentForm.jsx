@@ -51,10 +51,10 @@ const PaymentForm = () => {
 
   return (
     <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-md shadow-md">
-      <h2 className="text-2xl font-bold mb-4 text-center text-maroon">Payment Platform</h2>
+      <h2 className="text-3xl font-bold mb-4 text-center text-maroon">Payment Platform</h2>
       <form id="paymentForm" onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-gray-600 text-sm font-medium mb-2 text-left text-black">
+          <label htmlFor="email" className="block text-gray-600 text-lg font-medium mb-2 text-left text-black">
             Email Address
           </label>
           <input
@@ -67,7 +67,7 @@ const PaymentForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="amount" className="block text-gray-600 text-sm font-medium mb-2 text-left text-black">
+          <label htmlFor="amount" className="block text-gray-600 text-lg font-medium mb-2 text-left text-black">
             Amount
           </label>
           <input
@@ -80,7 +80,7 @@ const PaymentForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="first-name" className="block text-gray-600 text-sm font-medium mb-2 text-left text-black">
+          <label htmlFor="first-name" className="block text-gray-600 text-lg font-medium mb-2 text-left text-black">
             First Name
           </label>
           <input
@@ -93,7 +93,7 @@ const PaymentForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="last-name" className="block text-gray-600 text-sm font-medium mb-2 text-left text-black">
+          <label htmlFor="last-name" className="block text-gray-600 text-lg font-medium mb-2 text-left text-black">
             Last Name
           </label>
           <input

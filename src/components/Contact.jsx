@@ -8,7 +8,7 @@ import gmail from "/socials/gmail.png";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center mb-5">
+    <div className="flex flex-col items-center justify-center mt-5">
       <Heading title1="Contact" title2="Us" />
 
       <div className="w-full md:w-3/4 flex flex-col md:flex-row items-center mt-4 md:mx-5">

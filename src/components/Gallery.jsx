@@ -74,7 +74,8 @@ function Gallery() {
 
   return (
     <div>
-      <Heading title1="Our" title2="Gallery" className="mt-5" />
+      <div className="items-center justify-center mb-5"></div>
+      <Heading title1="Our" title2="Gallery" className="mb-5" />
       <div className="w-full mt-20 overflow-hidden px-8 mt-5">
         <div className="space-y-20">
           <Slider {...settings}>
@@ -102,7 +103,7 @@ function Gallery() {
             />
         <button
   onClick={handleCloseModal}
-  className="absolute top-4 right-4 text-red-500 font-bold text-2xl close-button"
+  className="absolute top-12 right-2 text-red-500 font-bold text-2xl close-button mt-5"
 >
   Close
 </button>

@@ -14,6 +14,7 @@ import German from "../components/German";
 const Courses = () => {
   return (
     <div>
+    <div className="items-center justify-center mb-5"></div>
       <Heading title1="Our" title2="Programs" />
       <div className="bg-custom-color">
         <div className="container mx-auto p-4">

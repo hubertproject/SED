@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <div className="min-h-[60vh] flex flex-col md:flex-row md:justify-between items-center md:mx-5 mx-5 mt-5">
         <div className="md:w-2/4 text-left rounded-lg p-2">
-          <p className="text-maroon mt-5 text-left text-4xl font-bold">
+          <p className="text-maroon mb-10 text-left text-4xl font-bold">
             Become an Elite <p>Software Engineer</p>
           </p>
           <p className="text-whitey mt-5 text-start text-lg ">
