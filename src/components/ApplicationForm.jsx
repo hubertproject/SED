@@ -86,7 +86,7 @@ const ApplicationForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Define an array of required fields
+    // array of required fields
     const requiredFields = [
       "firstName",
       "middleName",
@@ -108,10 +108,10 @@ const ApplicationForm = () => {
 
     try {
       const formData = new FormData();
-      // formData.append("file", picture);
+       
 
       const response = await fetch(
-        "https://v1.nocodeapi.com/damashub/google_sheets/rGmLYUnRuCEfIVsC?tabId=Sheet1",
+        "https://v1.nocodeapi.com/damashub/google_sheets/rGmLYUnRuCEfIVsC?tabId=Sheet3",
         {
           method: "POST",
           headers: {
@@ -203,6 +203,9 @@ const ApplicationForm = () => {
       setErrorMessage("An error occurred. Please try again.");
     }
   };
+  const handlePrint = () => {
+    window.print();
+    };
   
 
   
@@ -217,23 +220,24 @@ const ApplicationForm = () => {
           style={{ width: "90px", height: "45px" }}
         />
           <div className="text-red-500 border border-red-500 p-4 rounded">
-                <p className="mb-4 font-bold text-xl">
+                <p className="mb-4 font-bold text-mx">
                    PLEASE TAKE NOTES
                   
                 </p>
                 <ul className="list-disc list-inside text-lg text-white">
                   <li>
-                    After filling the Form Preview it and Print 
+                    Click the Print Button and save as PDF
                   </li>
                   <li>
-                    Click on the Edit button and now Submit 
+                     After that submit the Form 
                   </li>
                    
                   <li>
-                    Attach your Choosen School Certificate 
+                    Attach your School Certificate and Passport Pictures
                   </li>
+                  
                   <li>
-                    Attach Your Passport Picture and when reporting
+                    Print the PDF and sign it Afterwards
                   </li>
                   
                 </ul>
@@ -614,6 +618,13 @@ const ApplicationForm = () => {
                 {errorMessage && (
                   <p className="text-red-500 mt-3">{errorMessage}</p>
                 )}
+                <button
+                type="button"   
+                onClick={handlePrint}  // Call handlePrint function on click
+                className="bg-blue-500 text-white font-bold py-2 px-4 rounded mr-4 w-full mt-5"
+              >
+                Print
+              </button>
                 <button
                   type="submit"
                   className="bg-green-500 hover:bg-red-700 text-white-500 font-bold py-2 px-4 rounded mr-4 w-full mt-5"
