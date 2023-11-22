@@ -1,7 +1,7 @@
  /* eslint-disable no-unused-vars */
 import React from "react";
 import Button from "../layout/Button";
-import w1 from "../assets/w1.jpg";
+import sedb from "../assets/sedb.jpg";
 import { Link } from "react-router-dom";
 import About from "../components/About";
 import Review from "../components/Review";
@@ -27,7 +27,7 @@ const Home = () => {
         </div>
 
         <div className="w-full md:w-2/4 mt-5">
-          <img src={w1} alt="img" height="800" width="800" />
+          <img src={sedb} alt="img" height="800" width="800" />
         </div>
       </div>
 
