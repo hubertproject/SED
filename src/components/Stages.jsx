@@ -15,19 +15,19 @@ const Stages = () => {
         to a high-earning world-class software engineer
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="bg-maroon rounded-lg p-4 md:mx-5">
+        <div className="bg-maroona rounded-lg p-4 md:mx-5">
           <div className="text-4xl font-bold mb-4">01</div>
           <h4 className="text-xl font-bold mb-2">Preparatory Tuition</h4>
           <p className="text-sm">
             Our preparatory tuition is in two folds, the preparation in Tech
             subjects to open doors to the <a href="https://www.microverse.org/" className="text-blue-500" >Microverse</a> Training or opportunities
-            in <a href="https://www.germany.travel/en/index.html" className="text-blue-500">Germany</a>. The choice is the trainee's. The other is the provision
-            of German Language Lessons to meet the requirement for the Dual
-            Vocational Training.
+            in <a href="https://www.make-it-in-germany.com/en/" className="text-blue-500">Germany</a>. The choice is the trainee's. The other is the provision
+            of German Language Lessons to meet the requirement for the 
+            <a href="https://www.make-it-in-germany.com/en/study-training/training-in-germany" className="text-blue-500" > Dual Vocational training</a>
           </p>
         </div>
 
-        <div className="bg-red-600  rounded-lg p-4 md:mx-5">
+        <div className="bg-maroon  rounded-lg p-4 md:mx-5">
           <div className="text-4xl font-bold mb-4">02</div>
           <h4 className="text-xl font-bold mb-2">Main Program</h4>
           <p className="text-sm">
@@ -36,14 +36,14 @@ const Stages = () => {
           </p>
         </div>
 
-        <div className="bg-maroon rounded-lg p-4 md:mx-5">
+        <div className="bg-maroonn rounded-lg p-4 md:mx-5">
           <div className="text-4xl font-bold mb-4">03</div>
           <h4 className="text-xl font-bold mb-2">
             Access Remote Job Opportunity
           </h4>{" "}
           
           <p className="text-sm">
-          The job offer after a successful completion of any of the programmes a guarantee.
+          The job offer after a successful completion of any of the programmes is a  <a href="https://youtu.be/E3SY8BkRZug/" className="text-blue-500">guarantee.</a>
           </p>
         </div>
       </div>

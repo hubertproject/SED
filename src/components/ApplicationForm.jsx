@@ -211,8 +211,8 @@ const ApplicationForm = () => {
   
   return (
     
-    <div className="bg-white-100 min-h-screen flex items-center justify-center">
-      <div className="bg-white-100 p-2 rounded shadow-md w-full max-w-xl">
+    <div className=" min-h-screen flex items-center justify-center">
+      <div className="bg-maroon p-2 rounded shadow-md w-full max-w-xl mt-5">
         <img
           src={sedlogo}
           alt="Your Logo"
@@ -536,17 +536,17 @@ const ApplicationForm = () => {
                 How did you hear about Us?
               </h2>
               <div className="mb-4 flex justify-between items-center">
-                <label className="text-sm font-medium w-1/4">Radio:</label>
+                <label className="text-sm font-medium w-1/4">Name of Place:</label>
                 <input
                   type="text"
                   value={radio}
                   name="radio"
-                  placeholder="Name of Radio Station"
+                  placeholder="Name of where you heard from us"
                   className="form-input w-3/4 text-black  h-10"
                   onChange={handleChange}
                 />
               </div>
-              <div className="mb-4 flex justify-between items-center">
+              {/* <div className="mb-4 flex justify-between items-center">
                 <label className="text-sm font-medium w-1/4">
                   Sales Officers:
                 </label>
@@ -572,13 +572,13 @@ const ApplicationForm = () => {
                   placeholder="Name of Social Media"
                   onChange={handleChange}
                 />
-              </div>
+              </div> */}
 
-              <div className="text-red-500 border border-red-500 p-4 rounded">
+              {/* <div className="text-red-500 border border-red-500 p-4 rounded">
                 <p className="mb-2">
                   Preparatory Tuition Fee is Payable ONLY at the address below
                 </p>
-              </div>
+              </div> */}
 
               <div className="mt-4 flex justify-between">
                 <label
@@ -590,7 +590,7 @@ const ApplicationForm = () => {
                 <textarea
                   value="applicantName"
                   name="applicantName"
-                  className="form-textarea h-20 w-3/4"
+                  className="form-textarea h-10 w-3/4"
                   placeholder="Please Only Sign After Printing"
                 ></textarea>
               </div>

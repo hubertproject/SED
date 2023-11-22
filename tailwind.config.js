@@ -22,7 +22,11 @@ export default {
         'whit' :'#dae8e5',
         'maroon':'#800000',
         'gold':'#FFA500',
-        'off-white':'#F8F0E3'
+        'off-white':'#F8F0E3',
+        'white-smoke':'#F5F5F5',
+        'deep-blue':'#0C023E',
+        'maroona':'#8f2525',
+        'maroonn':'#5c0606'
       },
     },
   },

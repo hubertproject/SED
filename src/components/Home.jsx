@@ -1,7 +1,7 @@
  /* eslint-disable no-unused-vars */
 import React from "react";
 import Button from "../layout/Button";
-import w1 from "../assets/w1.jpg";
+import sedb from "../assets/sedb.jpg";
 import { Link } from "react-router-dom";
 import About from "../components/About";
 import Review from "../components/Review";
@@ -12,7 +12,7 @@ const Home = () => {
       <div className="min-h-[60vh] flex flex-col md:flex-row md:justify-between items-center md:mx-5 mx-5 mt-5">
         <div className="md:w-2/4 text-left rounded-lg p-2">
           <p className="text-maroon mb-10 text-left text-4xl font-bold">
-            Become an Elite <p className="text-blue-500">Software Engineer</p>
+            Become an Elite <p className="text-white-smoke">Software Engineer</p>
           </p>
           <p className="text-whitey mt-5 text-start text-lg ">
             Access remote job placement opportunities with global companies and
@@ -27,7 +27,7 @@ const Home = () => {
         </div>
 
         <div className="w-full md:w-2/4 mt-5">
-          <img src={w1} alt="img" height="800" width="800" />
+          <img src={sedb} alt="img" height="800" width="800" />
         </div>
       </div>
 

@@ -9,7 +9,7 @@ import c3 from "../assets/c3.jpg";
 import office from "../assets/office.png";
 import c5 from "../assets/c5.jpg";
 import Subtitle from "../components/Subtitle";
-import German from "../components/German";
+import Other from "../components/Other";
 
 const Courses = () => {
   return (
@@ -38,7 +38,7 @@ const Courses = () => {
             title="Computer Hardware"
             description="Hardware are the physical components of electronic devices like computers and smartphones, including the CPU, memory, storage, and input/output devices, enabling their functionality."
           />
-          <CoursesCard
+          {/* <CoursesCard
             img={c2}
             title="Networking"
             description="Networking connects devices, from local to global scales, using protocols and hardware. It's vital for modern communication, security, IoT, and cloud computing, managed by professionals."
@@ -52,10 +52,11 @@ const Courses = () => {
             img={office}
             title="Graphic Design & MS Office"
             description="Introduction to Word, Excel and PowerPoint"
-          />
+          /> */}
+          
         </div>
       </div>
-      <German />
+      <Other />
     </div>
   );
 };
