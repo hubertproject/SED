@@ -39,24 +39,23 @@ function Review() {
     <div>
       <Heading title1="Our" title2="Reviews" className="mt-5" />
       <div className="w-full mt-20 overflow-hidden px-10 mt-5">
-        <div className="space-y-20"> {/* Add space-y to control the space between sets */}
-          <Slider {...settings}>
-            {data.map((d) => (
-              <div key={d.name} className="w-full">
-                <div className="bg-white h-[400px] text-black rounded-xl mb-8">
-                  <div className="h-56 bg-indigo-500 flex justify-center items-center rounded-t-xl b">
-                    <img src={d.img} alt="" className="h-44 w-44 rounded-full" />
-                  </div>
+        <Slider {...settings}>
+          {data.map((d) => (
+            <div key={d.name} className="w-full slick-slide">
+              {/* Add slick-slide class above */}
+              <div className="bg-white h-[400px] text-black rounded-xl mb-8 ">
+                <div className="h-56 bg-maroonn flex justify-center items-center rounded-t-xl">
+                  <img src={d.img} alt="" className="h-44 w-44 rounded-full" />
+                </div>
 
-                  <div className="flex flex-col items-center justify-center gap-4 p-4">
-                    <p className="text-xl font-semibold">{d.name}</p>
-                    <p className="text-center">{d.review}</p>
-                  </div>
+                <div className="flex flex-col items-center justify-center gap-4 p-4">
+                  <p className="text-xl font-semibold">{d.name}</p>
+                  <p className="text-center">{d.review}</p>
                 </div>
               </div>
-            ))}
-          </Slider>
-        </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

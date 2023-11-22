@@ -50,7 +50,7 @@ const PaymentForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-md shadow-md">
+    <div className="max-w-md mx-auto mt-8 p-6 bg-whit rounded-md shadow-md">
       <h2 className="text-3xl font-bold mb-4 text-center text-maroon">Payment Platform</h2>
       <form id="paymentForm" onSubmit={handleSubmit}>
         <div className="mb-4">

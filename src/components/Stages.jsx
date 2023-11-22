@@ -7,10 +7,10 @@ const Stages = () => {
     <div className="bg-blue text-white md-auto p-2 pr-2">
       {" "}
       {/* Adjusted margin for small screens */}
-      <div className="text-4xl font-bold mb-4 text-center text-off-white">
+      <div className="text-4xl font-bold mt-5 text-center text-off-white">
         Stages of the Programme
       </div>
-      <h3 className="text-lg mb-8 text-flex md:mx-5">
+      <h3 className="text-lg mb-8 text-flex md:mx-5 mt-5">
         Our 3-tested programme is aimed at taking you from a complete beginner
         to a high-earning world-class software engineer
       </h3>
@@ -27,7 +27,7 @@ const Stages = () => {
           </p>
         </div>
 
-        <div className="bg-maroon  rounded-lg p-4 md:mx-5">
+        <div className="bg-maroonn  rounded-lg p-4 md:mx-5">
           <div className="text-4xl font-bold mb-4">02</div>
           <h4 className="text-xl font-bold mb-2">Main Program</h4>
           <p className="text-sm">
@@ -36,7 +36,7 @@ const Stages = () => {
           </p>
         </div>
 
-        <div className="bg-maroonn rounded-lg p-4 md:mx-5">
+        <div className="bg-maroon rounded-lg p-4 md:mx-5">
           <div className="text-4xl font-bold mb-4">03</div>
           <h4 className="text-xl font-bold mb-2">
             Access Remote Job Opportunity

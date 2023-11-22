@@ -23,13 +23,9 @@
        </div>
        <div className="flex flex-wrap gap-6 justify-center text-black">
          <div className="flex flex-wrap gap-6 justify-center text-black p-4">
+         
            <CoursesCard
              img={c1}
-             title="Coding"
-             description="HTML, CSS, and JavaScript are foundational for web development. HTML structures content, CSS styles it, JavaScript adds interactivity. Tailwind CSS simplifies styling, and React creates dynamic interfaces, essential for modern web development."
-           />
-           <CoursesCard
-             img={graphics}
              title="Systems Administration"
              description="Graphic design is pivotal for visually conveying ideas through images, text, and layout, with a significant impact on marketing, web, and print, as it focuses on composition, typography, and color to achieve effective communication."
            />
@@ -49,9 +45,14 @@
              description="How to repair phones and know how the components work together"
            />
            <CoursesCard
-             img={office}
-             title="Graphic Design & MS Office"
+             img={graphics}
+             title="Graphic Design"
              description="Introduction to Word, Excel and PowerPoint"
+           />
+             <CoursesCard
+             img={office}
+             title="Microsoft Office"
+             description="Microsoft Word, Excel and PowerPoint and it's importance"
            />
            
          </div>

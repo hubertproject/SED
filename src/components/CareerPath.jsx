@@ -1,41 +1,39 @@
 /* eslint-disable no-unused-vars */
- // CareerPath.js
+// CareerPath.js
 import Stages from "../components/Stages";
 import React from "react";
 import EnrollCard from "../layout/EnrollCard";
 
 const CareerPath = () => {
   const careerPaths = [
-    "Software Developer",
     "Web Developer",
+    "Software Developer",
     "Network Engineer",
     "IT Project Manager",
     "Graphic Designer",
-    "Phone Repairer"
+
+    "Backend Developer",
+    "Frontend Developer",
+    "Fullstack Developer",
   ];
 
-  const pathsInRows = [];
-  const pathsPerRow = 3;
-
-  for (let i = 0; i < careerPaths.length; i += pathsPerRow) {
-    pathsInRows.push(careerPaths.slice(i, i + pathsPerRow));
-  }
+  // eslint-disable-next-line no-unused-vars
+  const pathsPerRowSmallScreen = 2;
+  const isSmallScreen = window.innerWidth <= 768; // Adjust the breakpoint as needed
 
   return (
     <>
       <div className="bg-blueblack-500 p-4 rounded-lg text-white mt-4 mr-4 text-center md:mx-5">
-        <div className="text-4xl font-semibold text-off-white">Career Paths</div>
-        <p className="mt-2">
-          {pathsInRows.map((row, rowIndex) => (
-            <div key={rowIndex} className="flex mt-4">
-              {row.map((path, index) => (
-                <ol key={index} className="list-disc ml-4 text-center ml-4">
-                  {path}
-                </ol>
-              ))}
+        <div className="text-4xl font-semibold text-off-white mt-8">
+          Career Paths
+        </div>
+        <div className={isSmallScreen ? "flex flex-wrap mt-4" : "flex mt-4"}>
+          {careerPaths.map((path, index) => (
+            <div key={index} className={isSmallScreen ? "w-1/2 mb-4" : "ml-4"}>
+              <ol className="list-disc text-center">{path}</ol>
             </div>
           ))}
-        </p>
+        </div>
         <div className="mb-4">
           <Stages />
         </div>

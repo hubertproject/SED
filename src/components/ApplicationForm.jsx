@@ -212,13 +212,8 @@ const ApplicationForm = () => {
   return (
     
     <div className=" min-h-screen flex items-center justify-center">
-      <div className="bg-maroon p-2 rounded shadow-md w-full max-w-xl mt-5">
-        <img
-          src={sedlogo}
-          alt="Your Logo"
-          className="w-16 h-16 absolute top-2 left-4 mb-8"
-          style={{ width: "90px", height: "45px" }}
-        />
+      <div className="bg-maroona p-2 rounded shadow-md w-full max-w-xl mt-5">
+        
           <div className="text-red-500 border border-red-500 p-4 rounded">
                 <p className="mb-4 font-bold text-mx">
                    PLEASE TAKE NOTES

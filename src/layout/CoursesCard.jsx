@@ -12,7 +12,7 @@ const CoursesCard = (props) => {
         <img src={img} alt="img" />
       </div>
       <div>
-        <h3 className="font-semibold text-2xl text-center my-5">{title}</h3>
+        <h3 className="font-semibold text-xl text-center my-5">{title}</h3>
         <p className="text-lightText text-left md:text-start text-semibold text-1xl">{description}</p>
       </div>
     </div>

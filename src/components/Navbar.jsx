@@ -18,10 +18,10 @@ const Navbar = () => {
       <div className={`flex flex-row justify-between p-4 px-2 md:px-8 bg-white ${galleryContainerClass}`}>
         <div className="flex items-center">
           <NavLink to="/" className="p-1 cursor-pointer">
-            <img src={sedlogo} alt="Logo" style={{ width: "100px", height: "40px" }} />
+            <img src={sedlogo} alt="Logo" style={{ width: "130px", height: "40px" }} />
           </NavLink>
         </div>
-        {/* <div className="text-maroon pr-2 text-2xl font-bold">The SEDS Institute</div> */}
+         
 
         <nav className="hidden md:flex gap-5 font-medium p-1 text-lg">
           <NavLink
