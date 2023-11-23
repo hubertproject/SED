@@ -2,11 +2,11 @@
  import React from "react";
  import Heading from "../layout/Heading";
  import CoursesCard from "../layout/CoursesCard";
- import c1 from "../assets/c1.jpg";
+ import sed2 from "../assets/sed2.jpg";
  import graphics from "../assets/graphics.jpeg";
  import c2 from "../assets/c2.jpg";
  import c3 from "../assets/c3.jpg";
- import office from "../assets/office.png";
+ import off from "../assets/off.jpg";
  import c5 from "../assets/c5.jpg";
  import OtherSub from "../components/OtherSub";
  import German from "../components/German";
@@ -25,9 +25,9 @@
          <div className="flex flex-wrap gap-6 justify-center text-black p-4">
          
            <CoursesCard
-             img={c1}
+             img={sed2}
              title="Systems Administration"
-             description="Graphic design is pivotal for visually conveying ideas through images, text, and layout, with a significant impact on marketing, web, and print, as it focuses on composition, typography, and color to achieve effective communication."
+             description="System administration involves managing and maintaining IT infrastructure, ensuring security, providing user support, optimizing performance, and automating tasks for efficient system operation."
            />
            <CoursesCard
              img={c5}
@@ -42,17 +42,17 @@
            <CoursesCard
              img={c3}
              title=" Phone Repair &  Servicing"
-             description="How to repair phones and know how the components work together"
+             description="Phone repair involves diagnosing and fixing hardware and software issues to ensure optimal functionality and longevity of mobile devices."
            />
            <CoursesCard
              img={graphics}
              title="Graphic Design"
-             description="Introduction to Word, Excel and PowerPoint"
+             description="Graphic design communicates messages visually using typography, imagery, and layout. It spans print and digital mediums, creating visually impactful designs for branding and communication."
            />
              <CoursesCard
-             img={office}
+             img={off}
              title="Microsoft Office"
-             description="Microsoft Word, Excel and PowerPoint and it's importance"
+             description="Microsoft Office is a productivity suite with applications like Word, Excel, and PowerPoint, widely used for document creation and enhancing productivity."
            />
            
          </div>

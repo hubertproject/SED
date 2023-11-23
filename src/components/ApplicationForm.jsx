@@ -212,7 +212,7 @@ const ApplicationForm = () => {
   return (
     
     <div className=" min-h-screen flex items-center justify-center">
-      <div className="bg-maroona p-2 rounded shadow-md w-full max-w-xl mt-5">
+      <div className="bg-bluee p-2 rounded shadow-md w-full max-w-xl mt-5">
         
           <div className="text-red-500 border border-red-500 p-4 rounded">
                 <p className="mb-4 font-bold text-mx">
@@ -616,7 +616,7 @@ const ApplicationForm = () => {
                 <button
                 type="button"   
                 onClick={handlePrint}  // Call handlePrint function on click
-                className="bg-blue-500 text-white font-bold py-2 px-4 rounded mr-4 w-full mt-5"
+                className="bg-maroona text-white font-bold py-2 px-4 rounded mr-4 w-full mt-5"
               >
                 Print
               </button>

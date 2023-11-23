@@ -8,7 +8,7 @@ import Heading from "../layout/Heading";
 const About = () => {
   return (
     <div className="md:min-h-screen flex flex-col-reverse md:flex-row items-center gap-5 md:mx-5 mx-5 mt-5">
-      <div className="w-full md:w-2/3 mb-10 mt-5">
+      <div className="w-full md:w-2/3 mb-10 mt-2">
         <img src={b6} alt="img" style={{ maxWidth: "100%", height: "auto" }} />
       </div>
 
@@ -19,7 +19,7 @@ const About = () => {
           <h2 className="text-2xl mt-2 font-semibold leading-tight">
             Vision
           </h2>
-          <p className="text-white mb-10">
+          <p className="text-white mb-5">
             To churn products with cutting-edge skills and knowledge in alignment
             with global industry demands.
           </p>
@@ -27,18 +27,16 @@ const About = () => {
           <h2 className="text-2xl mt-6 font-semibold leading-tight"> {/* Added more spacing between Vision and Mission */}
             Mission
           </h2>
-          <p className="text-white mb-10">
+          <p className="text-white mb-5">
             Hands-on training to imbue in trainees industry-specific skills that
             are in high demand globally. Avoiding a mismatch of skills and job
             market demands.
           </p>
         </div>
-        {/* <div className="w-full md:w-2/3 mb-10 mt-5">
-        <img src={b6} alt="img" style={{ maxWidth: "100%", height: "auto" }} />
-      </div> */}
+        
 
         <p className="text-lightText mt-5 text-left">
-        <div className="text-left space-y-2 mb-5"> 
+        <div className="text-left space-y-2 mb-4"> 
         <h1 className="text-left font-bold text-2xl mt-2">About Us</h1>
           The SEDS Institute is an equal and emerging industry-relevant
           opportunity provider. We do so by providing training in software
