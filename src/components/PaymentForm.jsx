@@ -50,8 +50,8 @@ const PaymentForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8 p-6 bg-whit rounded-md shadow-md">
-      <h2 className="text-3xl font-bold mb-4 text-center text-maroon">Payment Platform</h2>
+    <div className="max-w-md mx-auto mt-8 p-6 bg-whit rounded-md shadow-md ">
+      <h2 className="text-3xl font-bold mb-4 text-center text-maroon mt-20">Payment Form</h2>
       <form id="paymentForm" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="email" className="block text-gray-600 text-lg font-medium mb-2 text-left text-black">

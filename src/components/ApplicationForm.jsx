@@ -2,7 +2,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import sedlogo from "../assets/sedlogo.jpg";
 
 const ApplicationForm = () => {
   const [data, setData] = useState({
@@ -32,17 +31,13 @@ const ApplicationForm = () => {
     note: "",
     parentName: "",
     parentPhone: "",
-    radio: "",
-    salesOfficers: "",
-    heardByName: "",
-    socialMedia: "",
+    place: "",
+
     signatureDate: "",
   });
 
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-   
-
 
   const {
     firstName,
@@ -71,10 +66,8 @@ const ApplicationForm = () => {
     note,
     parentName,
     parentPhone,
-    radio,
-    salesOfficers,
-    heardByName,
-    socialMedia,
+    place,
+
     signatureDate,
     C,
   } = data;
@@ -108,7 +101,6 @@ const ApplicationForm = () => {
 
     try {
       const formData = new FormData();
-       
 
       const response = await fetch(
         "https://v1.nocodeapi.com/damashub/google_sheets/rGmLYUnRuCEfIVsC?tabId=Sheet3",
@@ -145,10 +137,8 @@ const ApplicationForm = () => {
               note,
               parentName,
               parentPhone,
-              radio,
-              salesOfficers,
-              heardByName,
-              socialMedia,
+              place,
+
               signatureDate,
               new Date().toLocaleString(),
             ],
@@ -186,10 +176,8 @@ const ApplicationForm = () => {
           note: "",
           parentName: "",
           parentPhone: "",
-          radio: "",
-          salesOfficers: "",
-          heardByName: "",
-          socialMedia: "",
+          place: "",
+
           signatureDate: "",
         });
         setErrorMessage(""); // Clear any previous error message
@@ -205,38 +193,22 @@ const ApplicationForm = () => {
   };
   const handlePrint = () => {
     window.print();
-    };
-  
+  };
 
-  
   return (
-    
-    <div className=" min-h-screen flex items-center justify-center">
-      <div className="bg-bluee p-2 rounded shadow-md w-full max-w-xl mt-5">
-        
-          <div className="text-red-500 border border-red-500 p-4 rounded">
-                <p className="mb-4 font-bold text-mx">
-                   PLEASE TAKE NOTES
-                  
-                </p>
-                <ul className="list-disc list-inside text-lg text-white">
-                  <li>
-                    Click the Print Button and save as PDF
-                  </li>
-                  <li>
-                     After that submit the Form 
-                  </li>
-                   
-                  <li>
-                    Attach your School Certificate and Passport Pictures
-                  </li>
-                  
-                  <li>
-                    Print the PDF and sign it Afterwards
-                  </li>
-                  
-                </ul>
-              </div>
+    <div className=" min-h-screen flex items-center justify-center mt-20">
+      <div className="bg-bluee p-2 rounded shadow-md w-full max-w-xl mt-4">
+        <div className="text-red-500 border border-red-500 p-4 rounded mt-5">
+          <p className="mb-4 font-bold text-mx">PLEASE TAKE NOTES</p>
+          <ul className="list-disc list-inside text-lg text-white">
+            <li>Click the Print Button and save as PDF</li>
+            <li>After that submit the Form</li>
+
+            <li>Attach your School Certificate and Passport Pictures</li>
+
+            <li>Print the PDF and sign it Afterwards</li>
+          </ul>
+        </div>
         <h1 className="text-2xl font-bold mt-4 text-red-500 text-center">
           THE SEDS INSTITUTES APPLICATION FORM
         </h1>
@@ -244,8 +216,7 @@ const ApplicationForm = () => {
           <h2 className="text-2xl font-semibold mb-4 mt-4">
             Personal Information
           </h2>
-          
-  
+
           <form className="" onSubmit={handleSubmit}>
             <div className="mb-4 flex justify-between">
               <label htmlFor="firstName" className="text-sm font-medium w-1/4">
@@ -531,49 +502,18 @@ const ApplicationForm = () => {
                 How did you hear about Us?
               </h2>
               <div className="mb-4 flex justify-between items-center">
-                <label className="text-sm font-medium w-1/4">Name of Place:</label>
+                <label className="text-sm font-medium w-1/4">
+                  Name of Place:
+                </label>
                 <input
                   type="text"
-                  value={radio}
-                  name="radio"
+                  value={place}
+                  name="place"
                   placeholder="Name of where you heard from us"
                   className="form-input w-3/4 text-black  h-10"
                   onChange={handleChange}
                 />
               </div>
-              {/* <div className="mb-4 flex justify-between items-center">
-                <label className="text-sm font-medium w-1/4">
-                  Sales Officers:
-                </label>
-                <input
-                  type="text"
-                  value={salesOfficers}
-                  name="salesOfficers"
-                  placeholder="Name of Sales Officer"
-                  className="form-input w-3/4 text-black  h-10"
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="mb-4 flex justify-between items-center">
-                <label className="text-sm font-medium w-1/4">
-                  Social Media:
-                </label>
-                <input
-                  type="text"
-                  value={socialMedia}
-                  name="socialMedia"
-                  className="form-input w-3/4 text-black  h-10"
-                  placeholder="Name of Social Media"
-                  onChange={handleChange}
-                />
-              </div> */}
-
-              {/* <div className="text-red-500 border border-red-500 p-4 rounded">
-                <p className="mb-2">
-                  Preparatory Tuition Fee is Payable ONLY at the address below
-                </p>
-              </div> */}
 
               <div className="mt-4 flex justify-between">
                 <label
@@ -614,12 +554,12 @@ const ApplicationForm = () => {
                   <p className="text-red-500 mt-3">{errorMessage}</p>
                 )}
                 <button
-                type="button"   
-                onClick={handlePrint}  // Call handlePrint function on click
-                className="bg-maroona text-white font-bold py-2 px-4 rounded mr-4 w-full mt-5"
-              >
-                Print
-              </button>
+                  type="button"
+                  onClick={handlePrint} // Call handlePrint function on click
+                  className="bg-maroona text-white font-bold py-2 px-4 rounded mr-4 w-full mt-5"
+                >
+                  Print
+                </button>
                 <button
                   type="submit"
                   className="bg-green-500 hover:bg-red-700 text-white-500 font-bold py-2 px-4 rounded mr-4 w-full mt-5"
@@ -628,15 +568,10 @@ const ApplicationForm = () => {
                 </button>
               </div>
             </div>
-            </form>
-          
-         
-          
-          
-          </div>
+          </form>
         </div>
       </div>
-    
+    </div>
   );
 };
 
