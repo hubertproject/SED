@@ -74,7 +74,7 @@ function Gallery() {
 
   return (
     <div>
-      <div className="items-center justify-center mb-5"></div>
+      <div className="items-center justify-center mb-20"></div>
       <Heading title1="Our" title2="Gallery" className="mb-5" />
       <div className="w-full mt-20 overflow-hidden px-8 mt-5">
         <div className="space-y-20">

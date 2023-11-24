@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <div className="min-h-[60vh] flex flex-col md:flex-row md:justify-between items-center md:mx-5 mx-5 mt-5">
         <div className="md:w-2/4 text-left rounded-lg p-2">
-          <p className="text-white-smoke mb-10 text-left text-4xl font-bold">
+          <p className="text-white-smoke mt-20 text-left text-4xl font-bold">
             Become an Elite <p className="text-white-smoke">Software Engineer</p>
           </p>
           <p className="text-whitey mt-5 text-start text-lg ">
@@ -26,8 +26,8 @@ const Home = () => {
           </Link>
         </div>
 
-        <div className="w-full md:w-2/4 mt-5">
-          <img src={sedb} alt="img" height="800" width="800" />
+        <div className="w-full md:w-2/4 mt-10">
+          <img src={sedb} alt="img" height="900" width="800" />
         </div>
       </div>
 

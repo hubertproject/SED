@@ -7,12 +7,12 @@ import Heading from "../layout/Heading";
 
 const About = () => {
   return (
-    <div className="md:min-h-screen flex flex-col-reverse md:flex-row items-center gap-5 md:mx-5 mx-5 mt-5">
-      <div className="w-full md:w-2/3 mb-10 mt-2">
+    <div className="md:min-h-screen flex flex-col-reverse md:flex-row items-center gap-5 md:mx-5 mx-5 mt-20">
+      <div className="w-full md:w-2/3 mb-10 mt-10">
         <img src={b6} alt="img" style={{ maxWidth: "100%", height: "auto" }} />
       </div>
 
-      <div className="w-full md:w-3/4 text-center space-y-2 mb-10 text-left"> {/* Updated text alignment */}
+      <div className="w-full md:w-3/4 text-center space-y-2 mb-4 text-left"> {/* Updated text alignment */}
         <Heading title1="What We" title2="Do" />
 
         <div className="text-left"> {/* Added a container for better spacing */}

@@ -14,10 +14,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative z-50">
-      <div className={`flex flex-row justify-between p-4 px-2 md:px-8 bg-white ${galleryContainerClass}`}>
-        <div className="flex items-center">
-          <NavLink to="/" className="p-1 cursor-pointer">
+    <div className={`fixed top-0 w-full z-50 ${galleryContainerClass}`}>
+    <div className="flex flex-row justify-between p-4 px-2 md:px-8 bg-white">
+      <div className="flex items-center">
+        <NavLink to="/" className="p-1 cursor-pointer">
             <img src={sedlogo} alt="Logo" style={{ width: "130px", height: "40px" }} />
           </NavLink>
         </div>

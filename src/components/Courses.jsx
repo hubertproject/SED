@@ -14,14 +14,14 @@ import Other from "../components/Other";
 const Courses = () => {
   return (
     <div>
-      <div className="items-center justify-center mb-5"></div>
+      <div className="items-center justify-center mb-20"></div>
       <Heading title1="Our" title2="Programs" />
       <div className="bg-custom-color">
         <div className="container mx-auto p-4">
           <Subtitle />
         </div>
       </div>
-      <div className="flex flex-wrap gap-6 justify-center text-black">
+      <div className="flex flex-wrap gap-6 justify-center text-black ">
         <div className="flex flex-wrap gap-6 justify-center text-black p-4">
           <CoursesCard
             img={c1}
