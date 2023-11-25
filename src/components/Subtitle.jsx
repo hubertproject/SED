@@ -13,7 +13,7 @@ const Subtitle = ({ sub1, sub2 }) => {
           craftsmanship, where problem-solving meets creative expressions
           through codes. The human touch in crafting solutions remains integral
           part despite the scientific underpinnings. This is achievable through
-          skills acquisition via hands-on  <a href="https://www.make-it-in-germany.com/en/study-training/training-in-germany" className="text-blue-500" >  Vocational training</a>
+          skills acquisition via hands-on  <a href="https://www.make-it-in-germany.com/en/working-in-germany/it-specialist-in-germany" className="text-blue-500" >  Vocational training</a>
         </h3>
       </p>
     </div>
