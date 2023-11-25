@@ -31,7 +31,7 @@ const Stages = () => {
           <div className="text-4xl font-bold mb-4">02</div>
           <h4 className="text-xl font-bold mb-2">Main Program</h4>
           <p className="text-sm">
-          Enrol onto the <a href="https://www.microverse.org/" className="text-blue-500">Microverse</a> Training program for free for 10 months or take advantage of the Dual Vocational Training offered also for free in Germany with training allowance.
+          Enroll onto the <a href="https://www.microverse.org/" className="text-blue-500">Microverse</a> Training program for free for 10 months or take advantage of the Dual Vocational Training offered also for free in Germany with training allowance.
 
           </p>
         </div>
