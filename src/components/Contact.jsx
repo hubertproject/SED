@@ -8,7 +8,7 @@ import gmail from "/socials/gmail.png";
 const Contact = () => {
   // Function to open WhatsApp direct message
   const openWhatsApp = () => {
-    window.location.href = "https://wa.me/0203633237"; // Replace with your WhatsApp number
+    window.location.href = "https://wa.me/0593929152"; // Replace with your WhatsApp number
   };
 
   return (
@@ -47,10 +47,10 @@ const Contact = () => {
             </p>
 
             {/* "Connect with us now" text */}
-            <p className="text-xl mt-4">Connect directly with us now: </p>
+            <p className="text-xl mt-20">Connect directly with us now: </p>
 
             {/* Social Media Icons with Links */}
-            <div className="flex flex-wrap justify-left space-x-4 mt-2 ml-2">
+            <div className="flex flex-wrap justify-left space-x-10 mt-2 ml-4">
               <img
                 src={whatsapp}
                 alt="Whatsapp"
@@ -69,14 +69,15 @@ const Contact = () => {
         <div className="md:w-3/3 mt-4 object-cover object-contain object-center md:p-0 p-6">
           <iframe
             title="Google Map"
-            width="500"
-            height="350"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.420332667431!2d0.43293297315784185!3d6.594566093399175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10273bd40371462d%3A0xa7b585137a1e0e60!2sHope%20Village%20Hotel!5e0!3m2!1sen!2sgh!4v1699451584284!5m2!1sen!2sgh"
             className="p-6 md:p-0"
             style={{ border: 2 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            // Set specific dimensions for big screens
+            width="450"
+            height="380"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.420332667431!2d0.43293297315784185!3d6.594566093399175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10273bd40371462d%3A0xa7b585137a1e0e60!2sHope%20Village%20Hotel!5e0!3m2!1sen!2sgh!4v1699451584284!5m2!1sen!2sgh"
           ></iframe>
         </div>
       </div>
