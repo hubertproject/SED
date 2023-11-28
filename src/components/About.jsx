@@ -16,7 +16,7 @@ const About = () => {
         <Heading title1="What We" title2="Do" />
 
         <div className="text-left"> {/* Added a container for better spacing */}
-          <h2 className="text-2xl mt-2 font-semibold leading-tight">
+          <h2 className="text-2xl mt-4 font-semibold leading-tight">
             Vision
           </h2>
           <p className="text-white mb-5">

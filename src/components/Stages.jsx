@@ -27,7 +27,7 @@ const Stages = () => {
           </p>
         </div>
 
-        <div className="bg-maroon  rounded-lg p-4 md:mx-5">
+        <div className="bg-blown  rounded-lg p-4 md:mx-5">
           <div className="text-4xl font-bold mb-4">02</div>
           <h4 className="text-xl font-bold mb-2">Main Program</h4>
           <p className="text-sm">

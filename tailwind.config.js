@@ -27,8 +27,14 @@ export default {
         'deep-blue':'#0C023E',
         'maroona':'#8f2525',
         'maroonn':'#5c0606',
-        'bluee':'#4545ba'
+        'bluee':'#4545ba',
+        'blown':'#621919',
+        'blownny':'#511515'
 
+
+      },
+      margin: {
+        '30': '30px',
       },
     },
   },

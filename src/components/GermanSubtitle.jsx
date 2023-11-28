@@ -10,9 +10,9 @@ const GermanSubtitle = ({ sub1, sub2 }) => {
       <div className="text-left mt-6 text-2xl">German Language Lessons</div>
         <h3>
           Germany is an economically vibrant country. Germans, are amongst the
-          smartest in the world. <p>They are looking for skilled-based
+          smartest in the world. They are looking for skilled-based
           professionals. They are looking for skill oriented people to build the
-          country.</p> First on the list are IT specialists followed closely by
+          country. First on the list are IT specialists followed closely by
           nurses then engineers. Learn German now for a future proof career.
         </h3>
       </p>

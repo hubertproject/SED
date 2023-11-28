@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className={`fixed top-0 w-full z-50 ${galleryContainerClass}`}>
-    <div className="flex flex-row justify-between p-4 px-2 md:px-8 bg-white">
+    <div className="flex flex-row justify-between p-3 px-2 md:px-8 bg-white">
       <div className="flex items-center">
         <NavLink to="/" className="p-1 cursor-pointer">
             <img src={sedlogo} alt="Logo" style={{ width: "130px", height: "40px" }} />
@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
          
 
-        <nav className="hidden md:flex gap-5 font-medium p-1 text-lg">
+        <nav className="hidden md:flex gap-10 font-medium p-1 text-xl">
           <NavLink
             to="/"
             className="text-maroon  text-center transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
@@ -75,7 +75,7 @@ const Navbar = () => {
       <div
         className={`${
           menu ? "translate-x-0" : "-translate-x-full"
-        } md:hidden flex flex-col absolute bg-[#ffffff] left-0 top-20 font-medium text-2xl text-center pt-8 pb-4 gap-4 w-full h-fit transition-transform duration-300`}
+        } md:hidden flex flex-col absolute bg-[#ffffff] left-0 top-20 font-medium text-3xl text-center pt-8 pb-4 gap-4 w-full h-fit transition-transform duration-300`}
       >
         <NavLink
           to="/"

@@ -42,12 +42,12 @@
            <CoursesCard
              img={c3}
              title=" Phone Repair &  Servicing"
-             description="Phone repair involves diagnosing and fixing hardware and software issues to ensure optimal functionality and longevity of mobile devices."
+             description="Phone repair is the process of identifying and resolving hardware and software issues to optimize functionality and extend the lifespan of mobile devices."
            />
            <CoursesCard
              img={graphics}
              title="Graphic Design"
-             description="Graphic design communicates messages visually using typography, imagery, and layout. It spans print and digital mediums, creating visually impactful designs for branding and communication."
+             description="Graphic design communicates messages visually using typography, imagery, and layout. It spans print and digital mediums, creating visually impactful designs."
            />
              <CoursesCard
              img={off}

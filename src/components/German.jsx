@@ -14,13 +14,13 @@ const German = () => {
   return (
     <div>
       <div className="bg-custom-color">
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 ">
           <GermanSubtitle />
         </div>
       </div>
 
       <div className="flex flex-wrap gap-6 justify-center text-black">
-      <div className="flex flex-wrap gap-6 justify-center text-black p-4">
+      <div className="flex flex-wrap gap-6 justify-center text-black p-4 ">
 
         <GermanCard img={a7} title="A1" description="A1 German for Beginners.Shows the acquisition of basic  language skills in consonance with the CEFR." />
         <GermanCard img={a5} title="A2" description="A2 German for learners.Shows the acquisition of elementary  language skills  in consonance with the CEFR.

@@ -23,8 +23,8 @@ const CareerPath = () => {
 
   return (
     <>
-      <div className="bg-blueblack-500 p-4 rounded-lg text-white mt-4 mr-4 text-center md:mx-5">
-        <div className="text-4xl font-semibold text-off-white mt-8">
+      <div className="bg-blueblack-500 p-4 rounded-lg text-white mb-10 mr-4 text-center md:mx-5">
+        <div className="text-4xl font-semibold text-off-white mb-5">
           Career Paths
         </div>
         <div className={isSmallScreen ? "flex flex-wrap mt-4" : "flex mt-4"}>

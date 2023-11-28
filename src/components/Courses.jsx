@@ -31,8 +31,8 @@ const Courses = () => {
           />
           <CoursesCard
             img={graphics}
-            title="Node.js + React + Boostrap"
-            description="Node.js for backend, React for dynamic UIs, and Bootstrap for streamlined design create a powerful stack for modern software development."
+            title="Node.js + React + Bootstrap"
+            description="Node.js for backend, React for dynamic UIs, and Bootstrap for streamlined design create a powerful stack for modern softwares."
           />
           <CoursesCard
             img={c5}
