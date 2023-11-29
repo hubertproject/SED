@@ -2,6 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import "../components/ApplicationForm.css"
 
 const ApplicationForm = () => {
   const [data, setData] = useState({
@@ -219,7 +220,7 @@ const ApplicationForm = () => {
           <h2 className="text-2xl font-semibold mb-4 mt-4">
             Personal Information
           </h2>
-
+          <div id="printable-form">
           <form className="" onSubmit={handleSubmit}>
             <div className="mb-4 flex justify-between">
               <label htmlFor="firstName" className="text-sm font-medium w-1/4">
@@ -548,6 +549,7 @@ const ApplicationForm = () => {
                   onChange={handleChange}
                 />
               </div>
+              
 
               <div className="flex justify-end items-center">
                 {successMessage && (
@@ -575,6 +577,8 @@ const ApplicationForm = () => {
         </div>
       </div>
     </div>
+    </div>
+    
     
   );
 };

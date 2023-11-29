@@ -44,7 +44,7 @@ function Review() {
             <div key={d.name} className="w-full slick-slide">
               {/* Add slick-slide class above */}
               <div className="bg-white h-[400px] text-black rounded-xl mb-8 ">
-                <div className="h-56 bg-maroonn flex justify-center items-center rounded-t-xl">
+                <div className="h-56 bg-blue-500 flex justify-center items-center rounded-t-xl">
                   <img src={d.img} alt="" className="h-44 w-44 rounded-full" />
                 </div>
 

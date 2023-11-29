@@ -1,0 +1,18 @@
+/* ApplicationForm.css */
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #printable-form,
+    #printable-form * {
+        visibility: visible;
+    }
+
+    #printable-form {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

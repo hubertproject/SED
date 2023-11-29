@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
+ /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
- // Gallery.js
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -47,9 +46,9 @@ function Gallery() {
     slidesToShow: slidesToShow,
     slidesToScroll: slidesToScroll,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     arrows: false,
-    fade: true,
+    fade: false, // Changed to false to achieve a slide effect
   };
 
   const handleImageClick = (index) => {
@@ -61,8 +60,6 @@ function Gallery() {
   const handleCloseModal = () => {
     setSelectedImage(null);
   };
-  
-  
 
   const handleNextImage = () => {
     setSelectedImage((prevIndex) => (prevIndex === data.length - 1 ? 0 : prevIndex + 1));
@@ -101,13 +98,12 @@ function Gallery() {
               className="max-w-full max-h-full rounded mx-auto"
               onClick={handleCloseModal}
             />
-        <button
-  onClick={handleCloseModal}
-  className="absolute top-12 right-2 text-red-500 font-bold text-2xl close-button mt-5"
->
-  Close
-</button>
-
+            <button
+              onClick={handleCloseModal}
+              className="absolute top-12 right-2 text-red-500 font-bold text-2xl close-button mt-5"
+            >
+              Close
+            </button>
 
             <div className="mt-4 flex justify-between items-center">
               <button
