@@ -53,7 +53,7 @@ const PaymentForm = () => {
   return (
     <div className=" min-h-screen flex items-center justify-center mt-10">
   <div className="bg-bluee p-2 rounded-t-2xl rounded-b-2xl shadow-md w-full max-w-md mt-4">
-      <h2 className="text-2xl font-bold mb-4 text-center text-maroon">Payment Form</h2>
+      <h2 className="text-3xl font-bold mb-4 text-center text-maroon">Payment Form</h2>
       <form id="paymentForm" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="email" className="block text-gray-600 text-lg font-medium mb-2 text-left text-black">

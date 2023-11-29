@@ -39,6 +39,7 @@ const ApplicationForm = () => {
 
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  
 
   const {
     firstName,
@@ -195,6 +196,7 @@ const ApplicationForm = () => {
   const handlePrint = () => {
     window.print();
   };
+
 
   return (
    
