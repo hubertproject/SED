@@ -8,7 +8,7 @@ import gmail from "/socials/gmail.png";
 const Contact = () => {
   // Function to open WhatsApp direct message
   const openWhatsApp = () => {
-    window.location.href = "https://wa.me/0593929152"; // Replace with your WhatsApp number
+    window.location.href = "https://wa.me/233593929152"; // Replace with your WhatsApp number
   };
 
   return (

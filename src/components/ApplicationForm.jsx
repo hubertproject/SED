@@ -196,10 +196,13 @@ const ApplicationForm = () => {
   };
 
   return (
+   
+   
     <div className=" min-h-screen flex items-center justify-center mt-20">
-      <div className="bg-bluee p-2 rounded shadow-md w-full max-w-xl mt-4">
+      <div className="bg-bluee p-2 rounded-t-2xl rounded-b-2xl shadow-md w-full max-w-xl mt-4">
         <div className="text-red-500 border border-red-500 p-4 rounded mt-5">
-          <p className="mb-4 font-bold text-mx">PLEASE TAKE NOTES</p>
+        
+          <p className="mb-4 font-bold text-mx text-maroon">PLEASE TAKE NOTES</p>
           <ul className="list-disc list-inside text-lg text-white">
             <li>Click the Print Button and save as PDF</li>
             <li>After that submit the Form</li>
@@ -209,7 +212,7 @@ const ApplicationForm = () => {
             <li>Print the PDF and sign it Afterwards</li>
           </ul>
         </div>
-        <h1 className="text-2xl font-bold mt-4 text-red-500 text-center">
+        <h1 className="text-2xl font-bold mt-4 text-maroon text-center">
           THE SEDS INSTITUTES APPLICATION FORM
         </h1>
         <div>
@@ -572,6 +575,7 @@ const ApplicationForm = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

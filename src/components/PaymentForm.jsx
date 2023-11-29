@@ -13,11 +13,11 @@ const PaymentForm = () => {
 
   const payWithPaystack = (e) => {
     e.preventDefault();
-    
+
     // Validate amount
     const parsedAmount = parseFloat(amount);
-    if (parsedAmount < 150) {
-      alert('Amount must be 150 or more.');
+    if (parsedAmount < 250 || parsedAmount > 300) {
+      alert('Amount must be between 250 and 300 GHS.');
       return;
     }
 
@@ -34,12 +34,12 @@ const PaymentForm = () => {
 
   const onPaymentSuccess = () => {
     console.log('Payment success function called!');
-    alert("Payment was successful");
-    setEmail("");
+    alert('Payment was successful');
+    setEmail('');
     setAmount('');
-    setFirstname("");
-    setLastname("");
-    
+    setFirstname('');
+    setLastname('');
+
     // Assuming /ApplicationForm is the correct path
     navigate('/ApplicationForm');
   };
@@ -49,9 +49,11 @@ const PaymentForm = () => {
     payWithPaystack(e);
   };
 
+
   return (
-    <div className="max-w-md mx-auto mt-8 p-6 bg-whit rounded-md shadow-md">
-      <h2 className="text-3xl font-bold mb-4 text-center text-maroon mt-10">Payment Form</h2>
+    <div className=" min-h-screen flex items-center justify-center mt-10">
+  <div className="bg-bluee p-2 rounded-t-2xl rounded-b-2xl shadow-md w-full max-w-md mt-4">
+      <h2 className="text-2xl font-bold mb-4 text-center text-maroon">Payment Form</h2>
       <form id="paymentForm" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="email" className="block text-gray-600 text-lg font-medium mb-2 text-left text-black">
@@ -106,11 +108,12 @@ const PaymentForm = () => {
           />
         </div>
         <div className="form-submit">
-          <button type="submit" className="bg-gold text-black px-4 py-2 rounded hover:bg-green-700 focus:outline-none w-full">
+          <button type="submit" className="bg-gold text-white px-2 py-2 rounded hover:bg-maroon focus:outline-none w-full text-xl mb-4 mt-4">
             Proceed to Payment (250 GHS)
           </button>
         </div>
       </form>
+    </div>
     </div>
   );
 };
