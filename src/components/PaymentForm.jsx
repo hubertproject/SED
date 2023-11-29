@@ -107,7 +107,7 @@ const PaymentForm = () => {
         </div>
         <div className="form-submit">
           <button type="submit" className="bg-gold text-black px-4 py-2 rounded hover:bg-green-700 focus:outline-none w-full">
-            Proceed to Payment (150 GHS)
+            Proceed to Payment (250 GHS)
           </button>
         </div>
       </form>
