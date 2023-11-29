@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
          
 
-        <nav className="hidden md:flex gap-6 font-bold p-1 text-2xl">
+        <nav className="hidden md:flex gap-6 font-bold p-1 text-xl">
           <NavLink
             to="/"
             className="text-blue-500  text-center transition-all cursor-pointer hover:shadow-md hover:shadow-maroon"
