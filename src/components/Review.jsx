@@ -65,27 +65,27 @@ const data = [
   {
     name: `Kofi John`,
     img: `/students/a1.png`,
-    review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    review: `SEDS Institute? They're churning out grads with killer skills, ready to take on the global industry.`,
   },
   {
-    name: `Esi Anderson`,
+    name: `Esi Fianu`,
     img: `/students/a2.png`,
-    review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    review: `SEDS doesn't just teach software stuff; they throw in German lessons which makes you a global player.`,
   },
   {
-    name: `Naa Ama`,
+    name: `Makafui Ebu`,
     img: `/students/a3.png`,
-    review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    review: `You know that gap between what schools teach and what jobs want? SEDS addresses that head-on. `,
   },
   {
-    name: `Man Louie`,
+    name: `Prince Wayne`,
     img: `/students/a4.png`,
-    review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    review: `SEDS is all about real-world prep. Graduates don't just know stuff; they've done stuff Yep, that's the SEDS vibe.`,
   },
   {
     name: `Mia Williams`,
     img: `/students/a5.png`,
-    review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    review: `Seriously, They sync up training with what the job market's hungry for, setting you on a solid career path. SEDS has the map.`,
   },
 ];
 
