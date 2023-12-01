@@ -1,17 +1,31 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import Heading from "../layout/Heading";
 import twitter from "/socials/twitter.png";
 import whatsapp from "/socials/whatsapp.png";
 import gmail from "/socials/gmail.png";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Contact = () => {
   // Function to open WhatsApp direct message
   const openWhatsApp = () => {
     window.location.href = "https://wa.me/233593929152"; // Replace with your WhatsApp number
   };
+  const [loading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []); 
 
   return (
+    <div>
+      {loading ? (
+        <div className="flex items-center justify-center h-screen">
+          <ClipLoader color={"#D0021B"} loading={loading} size={80} />
+        </div>
+      ) : (
     <div className="flex flex-col items-center justify-center mt-20">
       <Heading title1="Contact" title2="Us" />
 
@@ -81,6 +95,8 @@ const Contact = () => {
           ></iframe>
         </div>
       </div>
+    </div>
+    )}
     </div>
   );
 };

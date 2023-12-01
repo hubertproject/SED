@@ -1,7 +1,8 @@
  /* eslint-disable no-unused-vars */
-import React from "react";
+ import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import PaystackPop from '@paystack/inline-js';
+import ClipLoader from "react-spinners/ClipLoader";
 
 const PaymentForm = () => {
   const navigate = useNavigate();
@@ -50,7 +51,21 @@ const PaymentForm = () => {
   };
 
 
+  const [loading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []); 
+
   return (
+    <div>
+      {loading ? (
+        <div className="flex items-center justify-center h-screen">
+          <ClipLoader color={"#D0021B"} loading={loading} size={80} />
+        </div>
+      ) : (
     <div className=" min-h-screen flex items-center justify-center mt-10">
   <div className="bg-bluee p-2 rounded-t-2xl rounded-b-2xl shadow-md w-full max-w-md mt-4">
       <h2 className="text-3xl font-bold mb-4 text-center text-maroon">Payment Form</h2>
@@ -115,7 +130,8 @@ const PaymentForm = () => {
       </form>
     </div>
     </div>
+    )}
+    </div>
   );
 };
-
 export default PaymentForm;

@@ -1,18 +1,34 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import Heading from "../layout/Heading";
 import CoursesCard from "../layout/CoursesCard";
 import c1 from "../assets/c1.jpg";
 import graphics from "../assets/graphics.jpeg";
 
-import c3 from "../assets/c3.jpg";
+ 
 
 import c5 from "../assets/c5.jpg";
 import Subtitle from "../components/Subtitle";
 import Other from "../components/Other";
 
+import ClipLoader from "react-spinners/ClipLoader";
+
 const Courses = () => {
+  const [loading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []); 
+
   return (
+    <div>
+      {loading ? (
+        <div className="flex items-center justify-center h-screen">
+          <ClipLoader color={"#D0021B"} loading={loading} size={80} />
+        </div>
+      ) : (
     <div>
       <div className="items-center justify-center mb-20"></div>
       <Heading title1="Our" title2="Programs" />
@@ -42,6 +58,8 @@ const Courses = () => {
         </div>
       </div>
       <Other />
+      </div>
+      )}
     </div>
   );
 };

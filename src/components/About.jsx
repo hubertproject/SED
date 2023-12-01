@@ -1,5 +1,5 @@
  /* eslint-disable no-unused-vars */
-import React from "react";
+ import React, { useState, useEffect } from 'react';
 import b6 from "../assets/b6.jpg";
 import { Link } from "react-router-dom"; 
 import Heading from "../layout/Heading";
@@ -8,8 +8,24 @@ import { motion } from "framer-motion";
 
  
 
+import ClipLoader from 'react-spinners/ClipLoader';
+
 const About = () => {
+  const [loading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
   return (
+    <div>
+      {loading ? (
+        <div className="flex items-center justify-center h-screen">
+          <ClipLoader color={'#D0021B'} loading={loading} size={80} />
+        </div>
+      ) : (
     <>
       <div className="md:min-h-screen flex flex-col-reverse md:flex-row items-center gap-5 md:mx-5 mx-5 mt-20">
         <div className="w-full md:w-2/3 mb-10 mt-10">
@@ -70,6 +86,8 @@ const About = () => {
         </motion.div>
       </div>
     </>
+    )}
+    </div>
   );
 };
 

@@ -1,8 +1,9 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import "../components/ApplicationForm.css"
+import ClipLoader from "react-spinners/ClipLoader";
 
 const ApplicationForm = () => {
   const [data, setData] = useState({
@@ -198,8 +199,21 @@ const ApplicationForm = () => {
   };
 
 
+  const [loading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []); 
+
   return (
-   
+    <div>
+      {loading ? (
+        <div className="flex items-center justify-center h-screen">
+          <ClipLoader color={"#D0021B"} loading={loading} size={80} />
+        </div>
+      ) : (
    
     <div className=" min-h-screen flex items-center justify-center mt-20">
       <div className="bg-bluee p-2 rounded-t-2xl rounded-b-2xl shadow-md w-full max-w-xl mt-4">
@@ -582,6 +596,8 @@ const ApplicationForm = () => {
     </div>
     
     
+    )}
+    </div>
   );
 };
 
