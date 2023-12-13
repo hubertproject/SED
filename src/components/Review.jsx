@@ -63,12 +63,12 @@ function Review() {
 
 const data = [
   {
-    name: `Kofi John`,
+    name: `Johnny Hanson`,
     img: `/students/a1.png`,
     review: `SEDS Institute? They're churning out grads with killer skills, ready to take on the global industry.`,
   },
   {
-    name: `Esi Fianu`,
+    name: `Attah Fianu`,
     img: `/students/a2.png`,
     review: `SEDS doesn't just teach software stuff; they throw in German lessons which makes you a global player.`,
   },
