@@ -23,7 +23,7 @@ const Contact = () => {
     <div>
       {loading ? (
         <div className="flex items-center justify-center h-screen">
-          <ClipLoader color={"#D0021B"} loading={loading} size={80} />
+          <ClipLoader color={"#D0021B"} loading={loading} size={50} />
         </div>
       ) : (
     <div className="flex flex-col items-center justify-center mt-20">
