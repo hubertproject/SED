@@ -11,7 +11,7 @@ import c5 from "../assets/c5.jpg";
 import Subtitle from "../components/Subtitle";
 import Other from "../components/Other";
 
-import ClipLoader from "react-spinners/ClipLoader";
+import FadeLoader from "react-spinners/FadeLoader";
 
 const Courses = () => {
   const [loading, setIsLoading] = useState(true);
@@ -26,7 +26,7 @@ const Courses = () => {
     <div>
       {loading ? (
         <div className="flex items-center justify-center h-screen">
-          <ClipLoader color={"#D0021B"} loading={loading} size={50} />
+          <FadeLoader color={"#D0021B"} loading={loading} size={50} />
         </div>
       ) : (
     <div>

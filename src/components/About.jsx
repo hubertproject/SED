@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
  
 
-import ClipLoader from 'react-spinners/ClipLoader';
+import FadeLoader from 'react-spinners/FadeLoader';
 
 const About = () => {
   const [loading, setIsLoading] = useState(true);
@@ -23,7 +23,7 @@ const About = () => {
     <div>
       {loading ? (
         <div className="flex items-center justify-center h-screen">
-          <ClipLoader color={'#D0021B'} loading={loading} size={50} />
+          <FadeLoader color={'#D0021B'} loading={loading} size={50} />
         </div>
       ) : (
     <>
@@ -65,7 +65,7 @@ const About = () => {
               industries and the Institute of learning and training are traveling in
               opposite directions. Curricula (program content) of the universities
               produce one thing, and the job market is looking for another. A major
-              reason for youth unemployment. This abyss can, however, be escaped if
+              reason for youth unemployment. This abyss can however, be escaped if
               you make the right decision now.
             </p>
           </div>

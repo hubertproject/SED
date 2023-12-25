@@ -6,7 +6,7 @@ import sedb from '../assets/sedb.jpg';
 import { Link } from 'react-router-dom';
 import About from '../components/About';
 import Review from '../components/Review';
-import ClipLoader from "react-spinners/ClipLoader";
+import FadeLoader from "react-spinners/FadeLoader";
 
 const Home = () => {
   const [loading, setIsLoading] = useState(true);
@@ -21,7 +21,7 @@ const Home = () => {
     <div>
       {loading ? (
         <div className="flex items-center justify-center h-screen">
-          <ClipLoader color={"#D0021B"} loading={loading} size={50} />
+          <FadeLoader color={"#D0021B"} loading={loading} size={50} />
         </div>
       ) : (
         <div>
@@ -46,7 +46,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Render the About component */}
+           
           <About />
           <Review />
         </div>

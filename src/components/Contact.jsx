@@ -4,7 +4,7 @@ import Heading from "../layout/Heading";
 import twitter from "/socials/twitter.png";
 import whatsapp from "/socials/whatsapp.png";
 import gmail from "/socials/gmail.png";
-import ClipLoader from "react-spinners/ClipLoader";
+import FadeLoader from "react-spinners/FadeLoader";
 
 const Contact = () => {
   // Function to open WhatsApp direct message
@@ -23,7 +23,7 @@ const Contact = () => {
     <div>
       {loading ? (
         <div className="flex items-center justify-center h-screen">
-          <ClipLoader color={"#D0021B"} loading={loading} size={50} />
+          <FadeLoader color={"#D0021B"} loading={loading} size={50} />
         </div>
       ) : (
     <div className="flex flex-col items-center justify-center mt-20">

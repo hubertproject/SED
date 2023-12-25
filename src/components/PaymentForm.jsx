@@ -79,7 +79,7 @@ const PaymentForm = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             id="email-address"
-            className="border p-2 w-full"
+            className="border p-2 w-full rounded-2xl"
             style={{ color: 'black' }}
           />
         </div>
@@ -92,7 +92,7 @@ const PaymentForm = () => {
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
             id="amount"
-            className="border p-2 w-full"
+            className="border p-2 w-full rounded-2xl"
             style={{ color: 'black' }}
           />
         </div>
@@ -105,7 +105,7 @@ const PaymentForm = () => {
             value={firstname}
             onChange={(e) => setFirstname(e.target.value)}
             id="first-name"
-            className="border p-2 w-full text-left"
+            className="border p-2 w-full rounded-2xl text-left"
             style={{ color: 'black' }}
           />
         </div>
@@ -118,7 +118,7 @@ const PaymentForm = () => {
             value={lastname}
             onChange={(e) => setLastname(e.target.value)}
             id="last-name"
-            className="border p-2 w-full text-left"
+            className="border p-2 w-full rounded-2xl text-left"
             style={{ color: 'black' }}
           />
         </div>
