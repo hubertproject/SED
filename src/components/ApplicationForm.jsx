@@ -216,7 +216,7 @@ const ApplicationForm = () => {
       ) : (
    
     <div className=" min-h-screen flex items-center justify-center mt-20">
-      <div className="bg-bluee p-2 rounded-t-2xl rounded-b-2xl shadow-md w-full max-w-xl mt-4">
+      <div className="bg-gray p-2 rounded-t-2xl rounded-b-2xl shadow-md w-full max-w-xl mt-4">
         <div className="text-red-500 border border-red-500 p-4 rounded mt-5">
         
           <p className="mb-4 font-bold text-mx text-maroon">PLEASE TAKE NOTES</p>
