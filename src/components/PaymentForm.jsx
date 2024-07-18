@@ -67,7 +67,7 @@ const PaymentForm = () => {
         </div>
       ) : (
     <div className=" min-h-screen flex items-center justify-center mt-10">
-  <div className="bg-bluee p-2 rounded-t-2xl rounded-b-2xl shadow-md w-full max-w-md mt-4">
+  <div className="bg-gray p-2 rounded-t-2xl rounded-b-2xl shadow-md w-full max-w-md mt-4">
       <h2 className="text-3xl font-bold mb-4 text-center text-maroon">Payment Form</h2>
       <form id="paymentForm" onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -123,7 +123,7 @@ const PaymentForm = () => {
           />
         </div>
         <div className="form-submit">
-          <button type="submit" className="bg-gold text-white px-2 py-2 rounded hover:bg-maroon focus:outline-none w-full text-xl mb-4 mt-4">
+          <button type="submit" className="bg-maroon text-white px-2 py-2 rounded hover:bg-gold focus:outline-none w-full text-xl mb-4 mt-4">
             Proceed to Payment (250 GHS)
           </button>
         </div>
