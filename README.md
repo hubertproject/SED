@@ -1,3 +1,3 @@
   
-  for Fast Refresh
+for Fast Refresh
  
