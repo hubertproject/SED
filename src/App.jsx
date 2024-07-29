@@ -12,22 +12,19 @@ import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 import ApplicationForm from "./components/ApplicationForm";
 import PaymentForm from "./components/PaymentForm";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
- const onPaymentSuccess = () => {
-  console.log('Payment success function called!');
-  // Handle the logic you want to execute on successful payment
-  // For example, navigate to the ApplicationForm page
-  // You can use the 'navigate' function from 'react-router-dom'
-  // Assuming 'navigate' is passed as a prop to App, make sure to adjust accordingly
-  // This is just an example, make sure to implement it according to your needs
-  navigate('/ApplicationForm');
-};
+  const onPaymentSuccess = () => {
+    console.log("Payment success function called!");
 
+    navigate("/ApplicationForm");
+  };
 
   return (
     <Router>
       <div>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -36,10 +33,7 @@ function App() {
           <Route path="/review" element={<Review />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
-          <Route
-            path="/ApplicationForm"
-            element={<ApplicationForm />}
-          />
+          <Route path="/ApplicationForm" element={<ApplicationForm />} />
           <Route
             path="/PaymentForm"
             element={<PaymentForm onPaymentSuccess={onPaymentSuccess} />}
