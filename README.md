@@ -1,7 +1,6 @@
 
 # SED
 
-
 This project, named SED, leverages React, Tailwind, and Paystack to provide a seamless user experience and secure payment integration. The website allows interested individuals to register and fill out an application form after purchasing it.
 
 Upon visiting the site, users can easily navigate through a user-friendly interface designed with Tailwind. The registration process is straightforward, guiding users through each step efficiently. After registration, users are directed to purchase the application form via Paystack, ensuring secure and swift transactions.
